@@ -13,8 +13,6 @@
   "archive_layout": "exile-ui-root",
   "runtime_paths": [
     "Exile UI.ahk",
-    "LICENSE.md",
-    "README.md",
     "cheat-sheets 2",
     "data",
     "img",

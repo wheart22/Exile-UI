@@ -4,9 +4,11 @@
 from __future__ import annotations
 
 import hashlib
+import io
 import json
 import subprocess
 import sys
+import tarfile
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -50,26 +52,31 @@ def add_bytes(
     archive.writestr(info, data)
 
 
-def tracked_runtime_files(config: dict[str, Any]) -> list[str]:
-    """Return tracked runtime files and exclude localization tooling from releases."""
+def runtime_archive_entries(
+    config: dict[str, Any], archive_root: str
+) -> list[tuple[str, bytes]]:
+    """Read the runtime from git so export-ignore rules match upstream archives."""
     roots = [str(item).replace("\\", "/").rstrip("/") for item in config.get("runtime_paths", [])]
     if not roots:
         raise SystemExit("release has no runtime_paths")
     result = subprocess.run(
-        ["git", "ls-files", "-z"],
+        ["git", "archive", "--format=tar", f"--prefix={archive_root}/", "HEAD", "--", *roots],
         cwd=ROOT,
         check=True,
         stdout=subprocess.PIPE,
     )
-    files = [name for name in result.stdout.decode("utf-8").split("\0") if name]
-    selected = [
-        name
-        for name in files
-        if any(name == root or name.startswith(root + "/") for root in roots)
-    ]
-    if not selected:
+    entries: list[tuple[str, bytes]] = []
+    with tarfile.open(fileobj=io.BytesIO(result.stdout), mode="r:") as archive:
+        for item in archive:
+            if not item.isfile():
+                continue
+            source = archive.extractfile(item)
+            if source is None:
+                raise SystemExit(f"unable to read release file: {item.name}")
+            entries.append((item.name, source.read()))
+    if not entries:
         raise SystemExit("release runtime_paths contain no tracked files")
-    return sorted(selected)
+    return entries
 
 
 def create_application_archive(
@@ -80,10 +87,7 @@ def create_application_archive(
     members: dict[str, str] = {}
     root = f"Exile-UI-zh-CN-{config['version']}"
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for relative in tracked_runtime_files(config):
-            source = ROOT / Path(relative)
-            data = source.read_bytes()
-            member = f"{root}/{relative}"
+        for member, data in runtime_archive_entries(config, root):
             add_bytes(archive, member, data, zip_time)
             members[member] = sha256_bytes(data)
 
@@ -129,7 +133,7 @@ def verify_release_scope(config: dict[str, Any]) -> None:
 
     if config.get("archive_layout") != "exile-ui-root":
         raise SystemExit("standalone releases must use the Exile UI root layout")
-    tracked_runtime_files(config)
+    runtime_archive_entries(config, f"Exile-UI-zh-CN-{config['version']}")
     release_instructions = config.get("release_instructions", {})
     instructions = ROOT / release_instructions.get("instructions_source", "")
     if not instructions.is_file():
