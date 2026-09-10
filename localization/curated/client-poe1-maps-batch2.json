@@ -1,0 +1,12 @@
+{
+  "zh-CN": {
+    "client.txt::key=maps_boss::occ=1": "首领",
+    "client.txt::key=maps_maven_invitation::occ=1": "贤主之邀",
+    "client.txt::key=maps_maven::occ=1": "贤主",
+    "client.txt::key=maps_oshabi::occ=1": "奥莎比",
+    "client.txt::key=maps_medved::occ=1": "梅德伟",
+    "client.txt::key=maps_vorana::occ=1": "沃拉娜",
+    "client.txt::key=maps_uhtred::occ=1": "乌特雷",
+    "client.txt::key=maps_olroth::occ=1": "奥尔罗斯"
+  }
+}

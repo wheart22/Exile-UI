@@ -1,0 +1,31 @@
+{
+  "zh-CN": {
+    "[leveltracker] default guide.json::/8/0/0": "刷到 58-62 级",
+    "[leveltracker] default guide.json::/8/0/1": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 统治者之殿",
+    "[leveltracker] default guide.json::/8/0/2": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 斜坡",
+    "[leveltracker] default guide.json::/8/1/0": "到达 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 贫瘠之地",
+    "[leveltracker] default guide.json::/8/1/1": "__XUI_TOKEN_001__ 第 1 段向 __XUI_TOKEN_002__ 前进 __XUI_TOKEN_003__ 其余路线为线性",
+    "[leveltracker] default guide.json::/8/2/0": "__XUI_TOKEN_001__ __XUI_TOKEN_002__: 向 __XUI_TOKEN_003__ 前进，选择一座雕像",
+    "[leveltracker] default guide.json::/8/2/1": "向 __XUI_TOKEN_001__ 取得 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 找到 __XUI_TOKEN_004__ __XUI_TOKEN_005__",
+    "[leveltracker] default guide.json::/8/2/2": "__XUI_TOKEN_001__ 通常位于 __XUI_TOKEN_002__ 附近或远处 __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/2/3": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 巨石丘陵",
+    "[leveltracker] default guide.json::/8/3/0": "向 __XUI_TOKEN_001__ 前进，激活 __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/8/3/1": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 沸水湖泊",
+    "[leveltracker] default guide.json::/8/4/0": "__XUI_TOKEN_001__ 2 个 __XUI_TOKEN_002__地心化石 : 向 __XUI_TOKEN_003__ 前进",
+    "[leveltracker] default guide.json::/8/4/1": "向 __XUI_TOKEN_001__ 前进，__XUI_TOKEN_002__ 蛇怪，取得 __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/4/2": "__XUI_TOKEN_001__重登 : __XUI_TOKEN_002__ __XUI_TOKEN_003__ 统治者之殿",
+    "[leveltracker] default guide.json::/8/5/0": "__XUI_TOKEN_001__ 佩塔卢斯和芙安珈: __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/8/5/1": "与 __XUI_TOKEN_001__ 罪交谈",
+    "[leveltracker] default guide.json::/8/5/2": "__XUI_TOKEN_001__ 佩塔卢斯和芙安珈: __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/8/5/3": "使用 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 贫瘠之地",
+    "[leveltracker] default guide.json::/8/6/0": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 绿洲",
+    "[leveltracker] default guide.json::/8/7/0": "找到 __XUI_TOKEN_001__ 沙坑，__XUI_TOKEN_002__ 沙之女神沙卡丽",
+    "[leveltracker] default guide.json::/8/7/1": "__XUI_TOKEN_001__ 沿 __XUI_TOKEN_002__ 边缘搜索",
+    "[leveltracker] default guide.json::/8/7/2": "__XUI_TOKEN_001__重登 : __XUI_TOKEN_002__ __XUI_TOKEN_003__ 统治者之殿",
+    "[leveltracker] default guide.json::/8/8/0": "__XUI_TOKEN_001__ 伊莎拉: __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/8/8/1": "使用 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 巨石丘陵",
+    "[leveltracker] default guide.json::/8/9/0": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/9/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ 巨石牛魔像 __XUI_TOKEN_003__(命运之历)",
+    "[leveltracker] default guide.json::/8/9/2": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 隧道"
+  }
+}

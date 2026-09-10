@@ -1,0 +1,34 @@
+{
+  "version": "v1.65.0-zh-CN.1",
+  "release_date": "2026-09-10",
+  "title": "Exile UI 1.65.0 PoE1 简体中文语言包",
+  "upstream": {
+    "repository": "Lailloken/Exile-UI",
+    "branch": "main",
+    "exile_ui_version": "1.65.0",
+    "exile_ui_commit": "3152d169dbbc3dc19308b42ac4b3f45538713070",
+    "path_of_exile_version": "3.29"
+  },
+  "archive_layout": "exile-ui-root",
+  "locales": [
+    "zh-CN"
+  ],
+  "included_files": [
+    "UI.txt",
+    "help tooltips.json",
+    "[leveltracker] default guide.json",
+    "[leveltracker] areas.json",
+    "[leveltracker] gems.json"
+  ],
+  "excluded_files": [
+    "client.txt",
+    "[leveltracker] default guide 2.json",
+    "[leveltracker] areas 2.json",
+    "[leveltracker] gems 2.json"
+  ],
+  "language_package": {
+    "instructions_source": "localization/release-assets/安装说明.txt",
+    "instructions_archive_name": "安装说明.txt",
+    "modifies_upstream_source": false
+  }
+}

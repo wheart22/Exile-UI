@@ -1,0 +1,1445 @@
+[
+  [
+    [
+      "击杀 西拉克",
+      "进入 areaid1_1_town ;; 狮眼守望"
+    ],
+    [
+      "(img:quest) 塔格拉: <大门口的敌人>",
+      "进入 areaid1_1_2 ;; 暮光海滩"
+    ],
+    [
+      "开荒: 激活 (img:waypoint)",
+      "进入 areaid1_1_3 ;; 炙热盐沼"
+    ],
+    [
+      "沿水流寻找 (img:quest) (quest:3_个雕文)",
+      "进入 (img:quest) areaid1_1_4_1 ;; 海潮地穴"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_1_2 ;; 暮光海滩",
+        "进入 areaid1_1_2a ;; 海潮孤岛"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "沿墙的 (img:6) 侧前进",
+        "(hint)__ 看到高台后，沿 (img:2) 侧前进",
+        "击杀 严寒之使，取得 (quest:宝箱) (lvl:4)",
+        "(color:cc99ff)重登: areaid1_1_town ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:quest) 塔格拉: <打破鸟蛋>、<打破鸟蛋>",
+        "(img:quest) 奈莎: <医者之心>",
+        "(img:waypoint) 前往 areaid1_1_4_1 ;; 海潮地穴"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "(color:ff00ff)在 (img:hideout) (color:fec076)你的藏身处 购买技能石 || 丽莉: <医者之心>、<打破鸟蛋>、<打破鸟蛋> ;; 仅导入 PoB 后显示",
+        "找到并进入 areaid1_1_4_0 ;; 水声之渊",
+        "(hint)__ 在 (color:cc99ff)桥 前走 (img:6) / (img:1)，少数为 (img:3)"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "找到并 击杀 黑渊危机（精华）",
+        "(hint)__ (color:cc99ff)起点 与 arena:黑渊危机 位于对角",
+        "使用 (img:arena) 船前往: areaid1_1_4_1 ;; 海潮地穴"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "进入附近的 areaid1_1_5 ;; 沉寂海崖"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(color:ff00ff)安全路线: 在 (color:cc99ff)桥 或 (img:arena) 附近开启 (img:portal)",
+        "(hint)__ 然后继续前往 areaid1_1_5 ;; 沉寂海崖",
+        "(color:ff00ff)快速路线: 进入 areaid1_1_4_0 ;; 水声之渊",
+        "(hint)__ 然后 击杀 黑渊危机 || 使用 (img:arena) 船",
+        "找到并进入 areaid1_1_5 ;; 沉寂海崖"
+      ]
+    },
+    [
+      "沿墙前往 areaid1_1_6 ;; 碎岩山坡",
+      "(hint)__ 安全路线: 沿悬崖走"
+    ],
+    [
+      "沿边缘前往 areaid1_1_7_1 ;; 禁灵之狱下层",
+      "开荒: (img:waypoint) 前往 areaid1_1_town (img:town) ;; 狮眼守望"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(color:ff00ff)安全路线? 进入 (img:portal) + (img:arena) 深处",
+        "(hint)__ 击杀 黑渊危机（精华） || (color:cc99ff)重登",
+        "(img:quest) 塔格拉: (quest:技能之书) ;; 黑渊危机",
+        "(img:quest) 奈莎: <冲出监牢>",
+        "(img:waypoint) 前往 areaid1_1_7_1 ;; 禁灵之狱下层"
+      ]
+    },
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "(hint)__ 通常在区域的 (img:1) 方向",
+      "进入 areaid1_1_7_2 ;; 禁灵之狱上层"
+    ],
+    [
+      "开荒: 可选: 寻找药剂师的保险箱",
+      "(hint)__ 可能掉落水银药剂",
+      "找到并 击杀 典狱长布鲁特斯 (lvl:8-10)",
+      "(color:cc99ff)重登: areaid1_1_town ;; 狮眼守望"
+    ],
+    [
+      "小号: (img:quest) 塔格拉: (quest:技能之书) ;; 黑渊危机",
+      "(img:quest) 塔格拉: <冲出监牢>",
+      "小号: (img:quest) 奈莎: <冲出监牢>",
+      "开荒: 可选: 有多余水银药剂? (color:cc99ff)商店配方:",
+      "(hint)__ 水银药剂 + 增幅石 +（移速）鞋子",
+      "(img:waypoint) 前往 areaid1_1_8 ;; 监狱大门"
+    ],
+    [
+      "道路旁的高台通往密道",
+      "沿墙前往 areaid1_1_9 ;; 魅影船墓"
+    ],
+    [
+      "开荒: 击杀 费尔船长 (quest:(不灭之火))",
+      "小号: 击杀 费尔船长",
+      "前往 areaid1_1_11_1 ;; 怨忿之窟",
+      "(img:waypoint) 前往 areaid1_1_town (img:town) ;; 狮眼守望"
+    ],
+    [
+      "(img:quest) 毕斯特: (quest:技能之书)",
+      "(img:quest) 奈莎: <海妖之歌>",
+      "(img:waypoint) 前往 areaid1_1_11_1 ;; 怨忿之窟"
+    ],
+    [
+      "前往 areaid1_1_11_2 ;; 怨忿之窟深处",
+      "(hint)__ 水流方向指向入口"
+    ],
+    [
+      "在 (img:arena) 巢穴内 击杀 海妖莫薇儿 (lvl:11-13)",
+      "(hint)__ 水流方向指向入口",
+      "进入 areaid1_2_1 ;; 南部森林"
+    ]
+  ],
+  [
+    [
+      "沿墙前往 areaid1_2_town ;; 森林营地"
+    ],
+    [
+      "沿 (img:1) 方向前往 areaid1_2_2 ;; 前哨原野"
+    ],
+    [
+      "开荒: 可选: (color:8787fe)药剂 / <腰带>: 找到 (img:arena) 兽穴并开启 (img:portal) ;; 兽穴",
+      "(hint)__ 通常位于道路附近",
+      "沿道路前进: areaid1_2_3 ;; 危机叉路"
+    ],
+    [
+      "沿道路激活 (img:waypoint)",
+      "开荒: 可选: (color:8787fe)药剂 / <腰带>: 使用 (img:waypoint) 回到 (img:town)，进入 (img:portal)",
+      "(hint)__ 进入 (img:arena) (color:ffffff)寻找 arena:野兽 || (color:cc99ff)重登: (img:quest) 伊娜",
+      "沿 (img:7) 方向前往: areaid1_2_6_1 ;; 罪孽之殿 1 层"
+    ],
+    [
+      "进入 areaid1_2_6_2 ;; 罪孽之殿 2 层",
+      "(hint)__ 中央的 (img:waypoint) 指向出口"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "击杀 忠诚不死者费德利塔斯 (lvl:14-15) || 拾取 (img:quest) (quest:邪影宝石)",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)arena: 位于对角",
+      "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
+    ],
+    [
+      "(img:quest) 古斯特: <黑色入侵者>",
+      "(img:quest) 赫莲娜: <邀请至藏身处>",
+      "沿 (img:5) 方向前往 areaid1_2_7 ;; 河道"
+    ],
+    [
+      "沿道路激活 (img:waypoint)",
+      "沿道路前往 areaid1_2_9 ;; 西部密林"
+    ],
+    [
+      "沿道路激活 (img:waypoint)",
+      "进入 areaid1_2_10 ;; 织网者巢穴",
+      "(hint)__ 搜索没有 (img:waypoint) 的一侧"
+    ],
+    [
+      "击杀 巨蛛之母，取得 (quest:马雷格罗的尖刺) (lvl:16)",
+      "(hint)__ 沿 (img:6) 侧边走；若未找到",
+      "(hint)__ 继续沿 (img:6) 或 (img:4)，再向 (img:1) 走",
+      "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
+    ],
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira",
+          "oak"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 斯克: <清理蜘蛛>",
+        "(img:waypoint) 前往 areaid1_2_3 ;; 危机叉路"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira",
+          "oak"
+        ]
+      ],
+      "lines": [
+        "沿 (img:1) 方向前往 areaid1_2_4 ;; 河畔断桥"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira",
+          "oak"
+        ]
+      ],
+      "lines": [
+        "沿道路前进",
+        "开荒: 可选: 首饰 + 3 名盗贼流放者",
+        "(hint)__ 在 (img:waypoint) 附近寻找 (color:cc99ff)遗迹",
+        "(color:red)击杀 arena:克雷顿 取得 (quest:项链)",
+        "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 斯克: <清理蜘蛛>",
+        "(img:waypoint) 前往 areaid1_2_7 ;; 河道"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira"
+        ]
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_2_7 ;; 河道"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira",
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "进入 areaid1_2_12 ;; 湿地",
+        "(hint)__ 沿两根石柱之间的小径前进"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira",
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "(color:red)击杀 arena:欧克 取得 (quest:项链)",
+        "找到 (img:waypoint): areaid1_2_9 ;; 西部密林",
+        "(hint)__ 通常在 (img:7) 或 (img:1)，少数在 (img:5)"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "oak"
+        ]
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_2_9 ;; 西部密林"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "kraityn",
+          "oak"
+        ]
+      ],
+      "lines": [
+        "找到并 (color:red)击杀 arena:阿莉亚 取得 (quest:项链)",
+        "(hint)__ 搜索有 (img:waypoint) 的一侧",
+        "向 (img:5) 前进，击杀 阿特力队长 || 摧毁 (img:quest) (quest:封印)",
+        "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "alira"
+        ]
+      ],
+      "lines": [
+        "找到并 (quest:帮助) arena:阿莉亚 取得 (quest:巨灵之印)",
+        "(hint)__ 搜索有 (img:waypoint) 的一侧",
+        "向 (img:5) 前进，击杀 阿特力队长 || 摧毁 (img:quest) (quest:封印)",
+        "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 艾米尔: (quest:巨灵之印)",
+        "(img:waypoint) 前往 areaid1_1_town (img:town) ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "alira",
+          "kraityn",
+          "oak"
+        ]
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_1_town (img:town) ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 毕斯特: (quest:技能之书)",
+        "(img:waypoint) 前往 areaid1_2_3 ;; 危机叉路"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "沿 (img:1) 方向前往 areaid1_2_4 ;; 河畔断桥"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "沿道路前进",
+        "开荒: 可选: 首饰 + 3 名盗贼流放者",
+        "(hint)__ 在 (img:waypoint) 附近寻找 (color:cc99ff)遗迹",
+        "(quest:帮助) (color:ff8111)克雷顿 取得 (quest:巨灵之印)",
+        "(color:cc99ff)重登: areaid1_1_town ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "oak"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 毕斯特: <开路先锋>",
+        "(img:waypoint) 前往 areaid1_2_7 ;; 河道"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "oak"
+        ]
+      ],
+      "lines": [
+        "进入 areaid1_2_12 ;; 湿地",
+        "(hint)__ 沿两根石柱之间的小径前进"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "oak"
+        ]
+      ],
+      "lines": [
+        "找到并 (quest:帮助) arena:欧克 取得 (quest:巨灵之印)",
+        "找到 (img:waypoint): areaid1_2_3 ;; 危机叉路",
+        "(hint)__ 通常在 (img:7) 或 (img:1)，少数在 (img:5)"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "none",
+          "alira"
+        ]
+      ],
+      "lines": [
+        "(img:quest) 毕斯特: (quest:技能之书)",
+        "(img:waypoint) 前往 areaid1_2_3 ;; 危机叉路"
+      ]
+    },
+    {
+      "condition": [
+        "bandit",
+        [
+          "kraityn"
+        ]
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_2_3 ;; 危机叉路"
+      ]
+    },
+    [
+      "沿 (img:3) 方向前往 areaid1_2_15 ;; 堕道遗迹",
+      "沿道路前往 areaid1_2_5_1 ;; 寂静陵墓 1 楼"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "找到并进入 areaid1_2_5_2 ;; 寂静陵墓 2 楼",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)出口 位于对角"
+    ],
+    [
+      "找到 (img:quest) (quest:祭坛) , 取得 (quest:黄金之手)",
+      "(hint)__ (color:cc99ff)起点 与 (quest:祭坛) 位于对角",
+      "使用 (img:portal) 前往 areaid1_2_town ;; 森林营地"
+    ],
+    [
+      "(img:quest) 伊娜: (quest:技能之书)",
+      "(img:waypoint) 前往 areaid1_2_12 ;; 湿地"
+    ],
+    [
+      "清除 (img:quest) (quest:树根) : areaid1_2_11 ;; 瓦尔废墟"
+    ],
+    [
+      "找到并进入 areaid1_2_8 ;; 北部密林",
+      "(hint)_ - 区域通常呈 S 形或 V 形",
+      "(hint)_ - (color:cc99ff)少数: 区域呈向外螺旋"
+    ],
+    [
+      "沿 (img:7) 侧边可到达 areaid1_2_14_2 ;; 洞穴"
+    ],
+    [
+      "找到并进入 areaid1_2_14_3 ;; 古金字塔",
+      "小号: (hint)__ 经过 (img:waypoint) 后，在 (img:7) / (img:0) / (img:1) 角落",
+      "开荒: (hint)_ - 经过 (img:waypoint) 后，在 (img:7) / (img:0) / (img:1) 角落",
+      "开荒: (hint)_ - (img:craft): 位于另一角落（暗门）"
+    ],
+    [
+      "在 (img:arena) 顶层 击杀 瓦尔超灵 (lvl:20-22)",
+      "(hint)_ - 第一个 (img:arena) (color:ffffff)位于随机角落",
+      "(hint)_ - 之后位于相对的角落",
+      "(color:cc99ff)重登: 用 (img:waypoint) 前往 areaid1_3_1 ;; 萨恩城废墟"
+    ]
+  ],
+  [
+    [
+      "开荒: 向 (img:3) 前进并解锁 (img:craft) 工艺配方",
+      "向 (img:7) 前进，救出 (img:quest) 卡尔莉萨",
+      "沿 (img:5) 方向前往 areaid1_3_town ;; 萨恩营地"
+    ],
+    [
+      "进入 areaid1_3_2 ;; 贫民窟",
+      "前往 areaid1_3_3_1 ;; 火葬场",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)出口 位于对角"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "击杀 派蒂 || 拾取 (img:quest) (quest:托尔曼的手镯)",
+      "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
+    ],
+    [
+      "(img:quest) 马拉莫: <迷失的爱情>",
+      "(img:quest) 卡尔莉萨: (quest:下水道钥匙)",
+      "进入 areaid1_3_2 ;; 贫民窟"
+    ],
+    [
+      "打开 (img:quest) (quest:铁栅栏) , 进入 areaid1_3_10_1 ;; 下水道"
+    ],
+    [
+      "沿 (img:7) 方向寻找 (img:quest) (quest:bust_1) || 沿 (img:1) 方向激活 (img:waypoint)",
+      "用 (img:quest) (quest:bust_2) (color:cc99ff)检查房间:",
+      "(hint)__ (color:ff00ff)小房间? (img:quest) (quest:bust_3) 位于 (img:2)；(color:ff00ff)否则在 (img:7)",
+      "沿 (img:0) 方向前往 areaid1_3_5 ;; 市集地带"
+    ],
+    [
+      "沿 (img:0) 侧边前往 (img:waypoint)",
+      "开荒: 沿 (img:0) 方向前往 areaid1_3_6 ;; 黑石陵墓",
+      "小号: 前往 areaid1_3_7 ;; 激战广场",
+      "(hint)__ 搜索各个角落"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "完成 (img:lab) 试炼",
+        "(hint)__ (color:cc99ff)起点 与 (img:lab) 位于相邻角落",
+        "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:quest) 贺根: (quest:技能之书)",
+        "(hint)__ 若等级 23+: 检查 (color:cc99ff)四连装备",
+        "(img:waypoint) 前往 areaid1_3_5 ;; 市集地带"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "前往 areaid1_3_7 ;; 激战广场",
+        "(hint)__ 搜索各个角落"
+      ]
+    },
+    [
+      "(color:red)若低于 23 级，请先升级",
+      "沿 (img:7) 方向激活 (img:waypoint)，再沿 (img:5) 方向寻找 (img:quest) (quest:丝带线轴)",
+      "沿 (img:7) 方向前往 areaid1_3_9 (lvl:24) ;; 不朽海港"
+    ],
+    [
+      "沿边缘寻找 (img:quest) (quest:奇术硫磺)",
+      "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
+    ],
+    [
+      "小号: (img:quest) 贺根: (quest:技能之书)",
+      "(img:waypoint) 前往 areaid1_3_7 ;; 激战广场"
+    ],
+    [
+      "进入 areaid1_3_8_1 ;; 日耀神殿 1 层",
+      "(hint)__ 沿水道逆流前进",
+      "进入 areaid1_3_8_2 ;; 日耀神殿 2 层"
+    ],
+    [
+      "找到 (img:quest) 达拉夫人: <项链>、(quest:炼狱之粉)",
+      "开荒: (hint)__ 她旁边的 (img:arena)房间内有 (img:craft)",
+      "(img:waypoint) 前往 areaid1_3_10_1 ;; 下水道"
+    ],
+    [
+      "烧毁 (img:quest) (quest:不朽障壁)",
+      "进入 areaid1_3_13 ;; 乌旗守卫兵营"
+    ],
+    [
+      "激活 (img:waypoint) || 沿 (img:7) 方向前往 arena:格拉维奇",
+      "沿 (img:7) 方向前往 areaid1_3_14_1 ;; 月影神殿 1 层"
+    ],
+    [
+      "前往 areaid1_3_14_2 ;; 月影神殿 2 层",
+      "(hint)_ - 最初的 (color:cc99ff)走廊 指向 (img:7) 或 (img:1)",
+      "(hint)_ - 沿地毯及其朝向前进"
+    ],
+    [
+      "找到并 击杀 派蒂，取得 (quest:皇家钥匙) (lvl:27)",
+      "(hint)_ - 沿 (color:cc99ff)三段上行楼梯 和单辆货车前进",
+      "小号: (hint)_ - (color:cc99ff)两扇大门 通往竞技场",
+      "开荒: (hint)_ - (color:cc99ff)两扇大门 通往 arena: (img:craft)",
+      "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
+    ],
+    [
+      "(img:quest) 马拉莫: <铲除左右手>",
+      "(img:quest) 葛里戈: (quest:技能之书)",
+      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 莉莉: <命运之语> ;; 仅导入 PoB 后显示",
+      "(img:waypoint) 前往 areaid1_3_13 ;; 乌旗守卫兵营"
+    ],
+    [
+      "沿 (img:1) 方向前往 areaid1_3_15 ;; 皇家花园"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "沿道路激活 (img:waypoint)",
+        "沿 (img:1) + (img:0) 方向前进，完成 (img:lab) 试炼",
+        "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:waypoint) 前往 areaid1_3_15 ;; 皇家花园"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "沿 (img:7) 道路前往 areaid1_3_17_1 ;; 图书馆",
+        "quest-check: <命运之语> ;; 隐藏路径检查"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "找到 (img:waypoint) 和 (color:cc99ff)松动的蜡烛",
+        "进入 areaid1_3_17_2 ;; 档案室",
+        "quest-check: <命运之语> ;; 隐藏路径检查"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "找到 4 张 (img:quest) (quest:黄金书页)",
+        "(hint)__ (img:craft): 蜡烛位于狭窄走廊内",
+        "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地",
+        "quest-check: <命运之语> ;; 隐藏路径检查"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "准备一些通货",
+        "(img:waypoint) 前往 areaid1_3_17_1 ;; 图书馆",
+        "quest-check: <命运之语> ;; 隐藏路径检查"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:quest) 萨欧赛: <命运之语>",
+        "(img:waypoint) 前往 areaid1_3_15 ;; 皇家花园",
+        "quest-check: <命运之语> ;; 隐藏路径检查"
+      ]
+    },
+    [
+      "小号: 沿道路激活 (img:waypoint)",
+      "提前选项: (img:lab) 普通迷宫",
+      "(hint)__ 区域等级 33 || (color:cc99ff)稍后再选",
+      "沿 (color:cc99ff)马车 前往 areaid1_3_18_1 ;; 神权之塔"
+    ],
+    [
+      "到达 areaid1_3_18_2 ;; 神权之塔上层",
+      "(hint)__ (img:arena)楼梯可每隔 90° 生成"
+    ],
+    [
+      "找到 (img:arena) 屋顶，击杀 多米纳斯 (lvl:28)",
+      "(hint)__ 布局相同，经过贵族笼子后向 (img:1) 前进",
+      "进入 areaid1_4_1 ;; 水道遗迹"
+    ]
+  ],
+  [
+    [
+      "前往 areaid1_4_town ;; 统治者之殿",
+      "沿 (img:5) 方向前往 areaid1_4_2 ;; 干涸湖岸"
+    ],
+    [
+      "击杀 福尔，取得 (quest:迪虚瑞特的旗帜) (lvl:30)",
+      "(hint)__ 寻找 (img:help) 图标",
+      "(color:cc99ff)重登: areaid1_4_town ;; 统治者之殿"
+    ],
+    [
+      "进入 areaid1_4_3_1 ;; 漆黑矿坑 1 层"
+    ],
+    [
+      "开荒: 找到 (img:craft)",
+      "前往 areaid1_4_3_2 ;; 漆黑矿坑 2 层"
+    ],
+    [
+      "找到 (img:quest) (quest:迪虚瑞特的灵魂)",
+      "(hint)__ 位于主路上，或",
+      "(hint)__ 位于侧边房间或通道内",
+      "进入 areaid1_4_3_3 ;; 水晶矿脉"
+    ],
+    [
+      "找到 (img:waypoint): areaid1_4_town (img:town) ;; 统治者之殿"
+    ],
+    [
+      "(img:quest) 达苏尼: (quest:技能之书)",
+      "(img:quest) 欧优恩: <突破封印>",
+      "常规选项: (img:lab) 普通迷宫",
+      "(img:waypoint) 前往 areaid1_4_3_3 ;; 水晶矿脉"
+    ],
+    [
+      "进入 areaid1_4_5_1 ;; 德瑞索的幻境"
+    ],
+    [
+      "到达 areaid1_4_5_2 ;; 大竞技场",
+      "(hint)__ 尽可能向 (img:1) 直行"
+    ],
+    [
+      "击杀 德瑞索，取得 (quest:欲望之眼)",
+      "(hint)__ 尽可能向 (img:7) 前进",
+      "使用 (img:portal) 返回 areaid1_4_town"
+    ],
+    [
+      "(img:waypoint) 前往 areaid1_4_3_3 ;; 水晶矿脉",
+      "进入 areaid1_4_4_1 ;; 冈姆的幻境"
+    ],
+    [
+      "进入 areaid1_4_4_3 ;; 冈姆的堡垒",
+      "(hint)__ 向 (img:1) 前进，再沿桥梁和楼梯走"
+    ],
+    [
+      "击杀 冈姆，取得 (quest:(愤怒之眼)) || 使用 (img:portal) 返回 areaid1_4_town ;; 统治者之殿",
+      "(hint)__ (color:ff00ff)若右侧凸出，向 (img:7) 前进；(color:ff00ff)否则向 (img:1) 前进"
+    ],
+    [
+      "(img:waypoint) 前往 areaid1_4_3_3 ;; 水晶矿脉",
+      "与 (img:quest) 达拉夫人交谈",
+      "进入 areaid1_4_6_1 ;; 巨兽沼泽 1 层"
+    ],
+    [
+      "前往 areaid1_4_6_2 ;; 巨兽沼泽 2 层",
+      "(hint)__ 尽可能向 (img:6) 前进"
+    ],
+    [
+      "击杀 派蒂 || 进入 areaid1_4_6_3 ;; 育灵之室",
+      "(hint)_ - 通常 (color:cc99ff)出口 位于 (color:cc99ff)起点 西侧",
+      "(hint)_ - 尽可能直行"
+    ],
+    [
+      "击杀 暗语者德瑞、审判者马雷格罗、黑影薛朗",
+      "(img:quest) 派蒂 || 击杀 玛拉凯 (lvl:34)",
+      "使用 (img:portal) 返回 areaid1_4_town ;; 统治者之殿"
+    ],
+    [
+      "(img:quest) 达拉夫人: <永恒梦魇>",
+      "进入 areaid1_4_7 ;; 奥瑞亚之道"
+    ],
+    [
+      "向 (img:0) 前进，再沿轨道向 (img:7)",
+      "穿过 (color:cc99ff)桥 ，向 (img:0) 前进",
+      "找到 (img:quest) (quest:控制杆) : areaid1_5_1 ;; 奴隶深坑"
+    ]
+  ],
+  [
+    [
+      "开荒: 可选: 五连胸甲: (color:cc99ff)赛季机制",
+      "沿 (img:5) 边缘前进，击杀 监工头克劳",
+      "(hint)_ - 寻找有绞刑架的走廊",
+      "(hint)_ - 顺时针绕行，找到 arena:监工头克劳",
+      "进入 areaid1_5_town ;; 狱卒之塔"
+    ],
+    [
+      "(img:quest) 拉尼: <戒指>",
+      "进入 areaid1_5_2 ;; 控制区"
+    ],
+    [
+      "沿 (img:7) 方向寻找 (img:quest) (quest:米亚斯表)",
+      "沿 (img:1) 方向前往 arena:审判长卡斯提克斯 (quest:(卡斯提克斯之眼))",
+      "沿 (img:0) 方向前往 areaid1_5_3 ;; 奥瑞亚广场"
+    ],
+    [
+      "沿 (img:1) 方向前往 (img:quest) areaid1_5_4 ;; 圣堂高庭"
+    ],
+    [
+      "到达 areaid1_5_5 (lvl:37) ;; 纯净圣殿",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)出口 位于相邻角落"
+    ],
+    [
+      "沿 (img:0) 边缘前进，击杀 神主阿瓦留斯",
+      "开荒: (hint)__ (img:craft): 沿 (img:4) 边缘的走廊",
+      "(hint)__ 高经验区域，建议练到 40–42 级",
+      "向 (img:3) 前进，进入 areaid1_5_4b ;; 化作火海的高庭",
+      "开荒: (hint)__ (img:town) (color:cc99ff)商店: 与 (img:quest) 巴农交谈"
+    ],
+    [
+      "到达 areaid1_5_3b ;; 广场遗迹",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)出口 位于相邻角落"
+    ],
+    [
+      "沿 (img:5) 方向前进，顺时针绕行",
+      "沿 (img:7) 方向前往 areaid1_5_6 ;; 藏古堂"
+    ],
+    [
+      "找到 (img:quest) (quest:纯净之印)",
+      "(hint)__ 区域呈顺时针或逆时针螺旋",
+      "使用 (color:cc99ff)控制杆 , 进入 areaid1_5_3b ;; 广场遗迹"
+    ],
+    [
+      "沿 (img:5) 方向前往喷泉，开启 (img:portal)",
+      "沿 (img:4) 方向前往 areaid1_5_7 ;; 遗物圣所"
+    ],
+    [
+      "在角落找到 3 件 (img:quest) (quest:奇塔弗的受难)",
+      "开荒: (hint)__ 一件 (quest:奇塔弗的受难) 附近有 (img:craft)",
+      "(img:waypoint) 前往 areaid1_5_town (img:town) ;; 狱卒之塔",
+      "(hint)__ 返回 (img:arena) 入口"
+    ],
+    [
+      "(img:quest) 拉尼: (color:8787fe)功能药剂 || <珠宝> || (quest:技能之书)",
+      "(img:quest) 薇伦塔: (quest:技能之书)",
+      "进入 (img:portal) areaid1_5_3b ;; 广场遗迹"
+    ],
+    [
+      "沿 (img:7) 方向前往 areaid1_5_8 ;; 教堂顶楼"
+    ],
+    [
+      "向 (img:7) 前进，击杀 奇塔弗",
+      "(img:quest) 丽莉: areaid2_6_town ;; 狮眼守望"
+    ]
+  ],
+  [
+    [
+      "开荒: 与 (img:quest) 丽莉交谈",
+      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 丽莉: <优雅不再> ;; 仅导入 PoB 后显示",
+      "进入 areaid2_6_2 ;; 暮光海滩"
+    ],
+    [
+      "开荒: 可选: (img:quest) <腰带/项链>: 激活 (img:waypoint)",
+      "进入 areaid2_6_4 ;; 炙热盐沼"
+    ],
+    [
+      "向 (img:2) 前进，击杀 卡鲁长者，取得 (quest:(征服之眼))",
+      "(hint)__ 到达区域 (color:cc99ff)边缘 ? 沿边缘走",
+      "进入 (img:quest) areaid2_6_5 ;; 卡鲁要塞",
+      "(hint)_ - (color:ff00ff)若 (color:cc99ff)边缘 朝向 (img:1)，则向 (img:5) 前进",
+      "(hint)_ - (color:ff00ff)否则向 (img:7) 前进"
+    ],
+    [
+      "可选: 纹身: 沿水流向 (img:7) 前进",
+      "沿 (img:1) 方向前往 (img:arena) (color:ffffff) || 击杀 图克哈玛",
+      "沿 (img:1) 方向前往 areaid2_6_6 ;; 寂默山岭"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "激活 (img:waypoint)",
+        "可选: (img:quest) <腰带/项链>: 使用 (img:waypoint) 前往 areaid2_6_2 ;; 暮光海滩",
+        "(hint)__ 在 (img:arena) areaid2_6_3 ;; 海潮孤岛找到 (img:quest) (quest:手稿)",
+        "使用 (img:portal) 返回 areaid2_6_town ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "进入 areaid2_6_1 ;; 绝望岩滩"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "可选: 五连胸甲: (color:cc99ff)赛季机制",
+        "击杀 所有敌人",
+        "(color:cc99ff)重登: areaid2_6_town ;; 狮眼守望"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:quest) 丽莉: <优雅不再>",
+        "可选: (img:quest) 毕斯特: <腰带/项链>，交付 (quest:手稿)",
+        "(img:quest) 塔格拉: (quest:技能之书) ;; 图克哈玛",
+        "(img:waypoint) 前往 areaid2_6_6 ;; 寂默山岭"
+      ]
+    },
+    [
+      "查看 (img:waypoint) 相对 (img:arena) 的位置",
+      "(hint)_ - (color:ff00ff)若位于上方: 先向远处 (img:1)，再向 (img:7)",
+      "(hint)_ - (color:ff00ff)若位于左侧: 先向远处 (img:5)，再向 (img:7)",
+      "进入 areaid2_6_7_1 ;; 禁灵之狱下层"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "到达 areaid2_6_7_2 ;; 薛朗之塔"
+    ],
+    [
+      "击杀 薛朗与布鲁特斯",
+      "进入 areaid2_6_8 ;; 监狱大门"
+    ],
+    [
+      "找到 (color:cc99ff)通道 ，击杀 割裂者艾贝拉斯",
+      "(hint)__ 道路附近的山脊通向 (color:cc99ff)目标",
+      "沿道路前往 areaid2_6_9 ;; 西部密林"
+    ],
+    [
+      "沿道路前往 areaid2_6_10 ;; 河道",
+      "开荒: (hint)__ (img:craft): 位于道路火把旁的支路"
+    ],
+    [
+      "沿道路激活 (img:waypoint)",
+      "进入 areaid2_6_11 ;; 湿地",
+      "(hint)__ 沿两根石柱之间的小径前进"
+    ],
+    [
+      "沿 (img:6) 边缘前进，击杀 食腐虫后",
+      "(hint)__ 少数情况下 (img:arena)竞技场会位于 (img:1)",
+      "(color:cc99ff)重登: areaid2_6_town ;; 狮眼守望"
+    ],
+    [
+      "(img:quest) 毕斯特: (quest:技能之书) ;; 割裂者艾贝拉斯",
+      "开荒: (img:quest) 塔格拉: <头盔> || (quest:技能之书) ;; 薛朗 || 食腐虫后",
+      "小号: (img:quest) 塔格拉: (quest:技能之书) || <头盔> || (quest:技能之书) ;; 图克哈玛 || 薛朗 || 食腐虫后",
+      "(img:waypoint) 前往 areaid2_6_10 ;; 河道"
+    ],
+    [
+      "沿道路走到尽头",
+      "沿 (img:3) 方向前往 areaid2_6_12 ;; 南部森林"
+    ],
+    [
+      "向 (img:2) + (img:1) 前进，寻找 (color:cc99ff)桥",
+      "找到 (color:cc99ff)墙 ，沿墙向 (img:3) 前进",
+      "进入 areaid2_6_13 ;; 怨忿之窟"
+    ],
+    [
+      "取得 (img:quest) (quest:黑旗) || 到达 areaid2_6_14 ;; 孤岛灯塔"
+    ],
+    [
+      "沿 (img:1) 方向前往 (img:quest) (quest:燃料车)",
+      "开荒: (hint)__ (img:craft): 通向燃料车的楼梯",
+      "点燃 (img:quest) (quest:孤岛灯塔) , 烧毁 (img:quest) (quest:黑旗)",
+      "(img:quest) 威勒姆: areaid2_6_15 ;; 惊海之王的海礁"
+    ],
+    [
+      "尝试从 (img:waypoint) 向 (img:5) 前进:",
+      "(hint)_ - (color:ff00ff)开放布局: 向 (img:5) 前进并沿上侧边缘走",
+      "(hint)_ - (color:ff00ff)边缘布局: 向远处 (img:3)，再沿 (img:2) 边缘前进",
+      "击杀 惊海之王索亚格斯，使用 (img:portal) 返回 areaid2_6_town ;; 狮眼守望"
+    ],
+    [
+      "选择众神殿神祇",
+      "(img:waypoint) 前往 areaid2_7_town (img:town) ;; 断桥营地"
+    ]
+  ],
+  [
+    [
+      "进入 areaid2_7_1 ;; 河畔断桥"
+    ],
+    [
+      "开荒: 可选: (img:quest) (color:8787fe)功能药剂",
+      "(hint)_ - 沿道路向上，到达损坏的 (img:waypoint)",
+      "(hint)_ - 在附近废墟找到 (img:quest) (quest:银色吊坠)",
+      "沿道路前往 areaid2_7_2 ;; 危机叉路"
+    ],
+    [
+      "沿道路激活 (img:waypoint)",
+      "沿 (img:3) 方向前往 areaid2_7_3 ;; 堕道遗迹"
+    ],
+    [
+      "沿道路前往 areaid2_7_4 ;; 寂静陵墓"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "进入 (img:arena) 石棺，寻找 (img:quest) (quest:马雷格罗的地图)",
+      "使用 (img:portal) 返回 areaid2_7_town ;; 断桥营地"
+    ],
+    [
+      "开荒: 可选: (quest:银色吊坠) ? (img:quest) 威勒姆: (color:8787fe)功能药剂",
+      "使用 (img:waypoint) 前往 areaid2_7_2 ;; 危机叉路"
+    ],
+    [
+      "沿 (img:7) 方向前往 areaid2_7_5_1 ;; 罪孽之殿 1 层"
+    ],
+    [
+      "在中央房间激活 (img:waypoint)",
+      "在 (img:quest) (quest:地图装置) 中使用 (quest:马雷格罗的地图)",
+      "进入 areaid2_7_5_map ;; 马雷格罗的藏身处"
+    ],
+    [
+      "沿边缘走并穿过 (color:cc99ff)两座桥",
+      "开荒: 可选: 在 (color:cc99ff)第一座桥 后的 (color:cc99ff)摇篮 中寻找 <戒指>",
+      "击杀 马雷格罗，取得 (quest:灾厄毒液)",
+      "使用 (img:portal) 返回 areaid2_7_5_1 ;; 罪孽之殿 1 层"
+    ],
+    [
+      "(img:quest) 斯克: (quest:黑曜石钥匙)",
+      "进入 areaid2_7_5_2 ;; 罪孽之殿 2 层",
+      "(hint)__ (img:waypoint) 指向出口"
+    ],
+    [
+      "开荒: 完成 (img:lab) 试炼",
+      "(hint)__ 尽量向 (img:3) 前进，否则向 (img:6)",
+      "小号: 找到 (img:lab) 以辨别方向:",
+      "(hint)__ 尽量向 (img:3) 前进，否则向 (img:6)",
+      "打开 (img:quest) (color:cc99ff)通道 ，前往 areaid2_7_6 ;; 兽穴",
+      "(hint)__ 尝试前往 (img:lab) 远处的 (img:5)，否则前往远处 (img:1)"
+    ],
+    [
+      "到达 areaid2_7_7 ;; 灰原"
+    ],
+    [
+      "提前进行: (img:lab) 残酷帝王迷宫",
+      "(hint)__ 区域等级 55 || (color:cc99ff)也可稍后进行",
+      "沿道路向 (img:5)，击杀 受拉克斯操纵的古斯特",
+      "进入 areaid2_7_8 ;; 北部密林"
+    ],
+    [
+      "先向 (img:5)，再沿边缘向 (img:7) 前进",
+      "(hint)__ 若找到 (img:arena) 惊魂树洞入口，开启 (img:portal)",
+      "进入 areaid2_7_10 ;; 堤道"
+    ],
+    [
+      "尽量向 (img:0) / (img:6) 前进",
+      "取得 (img:quest) (quest:琪莎拉之星) , 进入 areaid2_7_11 ;; 瓦尔古城"
+    ],
+    [
+      "向 (img:7) 前进 _|| (color:ff00ff)若遇到 (color:cc99ff)悬崖:",
+      "(hint)_ - 沿悬崖走，再向 (img:1) 绕过墙壁",
+      "(hint)_ - (color:ff00ff)否则向 (img:7) 绕过较长的拐角",
+      "使用 (img:waypoint) 前往 areaid2_7_town (img:town) ;; 断桥营地"
+    ],
+    [
+      "(img:quest) 威勒姆: (quest:技能之书) ;; 琪莎拉之星",
+      "(img:quest) 艾米尔: (quest:技能之书) ;; 古斯特",
+      "开荒: (img:quest) 赫莲娜: <鞋子> ;; 马雷格罗",
+      "使用 (img:waypoint) / (img:portal) 前往 areaid2_7_8 ;; 北部密林"
+    ],
+    [
+      "找到并进入 areaid2_7_9 ;; 惊魂树洞",
+      "(hint)__ 位于 (img:waypoint) 的 (img:5) 方向，或沿 (img:6) 边缘"
+    ],
+    [
+      "找到 (img:arena) 巢穴，击杀 格鲁丝克",
+      "开荒: (hint)_ - 位于 (img:arena) 起点的 (img:4) 或 (img:3) 方向",
+      "开荒: (hint)_ - (img:craft) 位于另一方向",
+      "小号: (hint)__ 位于 (img:arena) 起点的 (img:4) 或 (img:3) 方向",
+      "找到 7 个 (img:quest) (quest:萤火虫)",
+      "使用 (img:portal) 返回 areaid2_7_town ;; 断桥营地"
+    ],
+    [
+      "(img:quest) 艾米尔: (quest:技能之书) ;; 格鲁丝克",
+      "常规进行: (img:lab) 残酷帝王迷宫",
+      "使用 (img:waypoint) 前往 areaid2_7_11 ;; 瓦尔古城"
+    ],
+    [
+      "与 (img:quest) 伊娜交谈",
+      "进入 areaid2_7_12_1 ;; 坠欲之殿 1 层"
+    ],
+    [
+      "可选: 瓦尔化的 (color:ff8111)武器 、<武器>、<护甲>",
+      "(hint)__ 大平台附近的 (color:cc99ff)红色房间",
+      "进入 areaid2_7_12_2 ;; 坠欲之殿 2 层",
+      "(hint)_ - 第 1 层: 斜向前进",
+      "(hint)_ - 第 2 层: 按旋转后的 Z 字形前进"
+    ],
+    [
+      "找到并击杀 阿拉卡力",
+      "(hint)_ - 第 1、2 层: 按旋转后的 Z 字形前进",
+      "(hint)_ - 第 3 层: 沿 (img:0) 边缘前进",
+      "进入 areaid2_8_1 ;; 奇迹之墙"
+    ]
+  ],
+  [
+    [
+      "可选: (color:cc99ff)走私者的秘宝 （夺宝）",
+      "(hint)__ 向 (img:0) 前进，在墙上找到 (color:cc99ff)开关",
+      "向 (img:2) 前进，再沿墙走",
+      "进入 areaid2_8_town ;; 萨恩营地"
+    ],
+    [
+      "沿 (img:6) 方向前往 areaid2_8_2_1 ;; 剧毒管道"
+    ],
+    [
+      "进入 areaid2_8_2_2 ;; 德瑞的污水坑",
+      "(hint)_ - 起始区域: 环形路线，只有 1 个出口",
+      "(hint)_ - 然后尽量向 (img:1) 前进"
+    ],
+    [
+      "找到并击杀 暗语者德瑞",
+      "(hint)__ 尝试前往远处 (img:5)、远处 (img:3) 或远处 (img:1)",
+      "经过 (img:waypoint) 后，沿 (img:1) 方向前往 areaid2_8_8 ;; 中转码头",
+      "开荒: (hint)__ (img:craft) 位于传送点的 (img:5) 方向"
+    ],
+    [
+      "沿水边前进: (img:quest) (quest:永恒十字架)",
+      "向远处 (img:4) 搜索 (img:arena) 复活地点",
+      "(hint)__ (img:quest) 卡尔莉萨 || 击杀 托尔曼",
+      "向远处 (img:2) 前往 areaid2_8_9 ;; 稻穗之门"
+    ],
+    [
+      "(color:aqua)死亡守卫 指向下一个 (color:cc99ff)区域",
+      "打开隐藏铁栅栏: (color:red)不要进入",
+      "击杀 古灵使徒斗士（位于 (img:help) 图标附近）",
+      "(hint)__ 位于相同或下一个 (color:aqua)死亡守卫 所在的 (color:cc99ff)区域",
+      "进入 (img:arena) (color:aqua)铁栅栏 : areaid2_8_14 ;; 隐秘腹地"
+    ],
+    [
+      "沿 (img:6) 墙壁前往 (color:cc99ff)三岔路口",
+      "开启 (img:portal)，继续沿墙走",
+      "进入 areaid2_8_11 ;; 日耀广场"
+    ],
+    [
+      "进入 areaid2_8_12_1 ;; 日耀神殿 1 层",
+      "(hint)__ 搜索远处 (img:0) 边缘，或",
+      "(hint)__ 沿水道逆流而上"
+    ],
+    [
+      "沿 (img:0) 边缘前进，再向 (img:7) 前进",
+      "使用 (img:waypoint) 前往 areaid2_8_town (img:town) ;; 萨恩营地"
+    ],
+    [
+      "进入 (img:portal) areaid2_8_14 ;; 隐秘腹地",
+      "沿第 3 条道路前往 areaid2_8_5 ;; 古兵工厂"
+    ],
+    [
+      "在房间前开启 (img:portal)",
+      "开荒: 可选: (img:arena) 房间内有 2-3 个 (color:cc99ff)重铸石",
+      "沿 (img:2) 方向前往 areaid2_8_6 ;; 月影广场"
+    ],
+    [
+      "向 (img:1) 前进，激活 (img:waypoint)",
+      "使用 (img:waypoint) 前往 areaid2_8_town (img:town) ;; 萨恩营地"
+    ],
+    [
+      "进入 (img:portal) areaid2_8_5 ;; 古兵工厂"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "可选: (img:arena) 房间内有 2-3 个 (color:cc99ff)重铸石",
+        "完成 (img:lab) 试炼 || 进入 areaid2_8_4 ;; 贵族花园",
+        "(hint)_ - 检查区域的 (img:6) / (img:7) / (img:0) 角落",
+        "(hint)_ - 注意: 你使用的 (img:arena) 出口位于 (img:2) 角落"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "找到并进入 areaid2_8_4 ;; 贵族花园",
+        "(hint)_ - 检查区域的 (img:6) / (img:7) / (img:0) 角落",
+        "(hint)_ - 注意: 你使用的 (img:arena) 出口位于 (img:2) 角落"
+      ]
+    },
+    [
+      "前往 (img:arena) 竞技场，击杀 恐惧之源尤格尔",
+      "(color:cc99ff)重登 : areaid2_8_town ;; 萨恩营地"
+    ],
+    [
+      "(img:quest) 马拉莫: (quest:技能之书) ;; 古灵使徒斗士",
+      "(img:quest) 贺根: <戒指> || (quest:技能之书) ;; 暗语者德瑞、恐惧之源尤格尔",
+      "(img:quest) 卡尔莉萨: (quest:技能之书) ;; 托尔曼",
+      "使用 (img:waypoint) 前往 areaid2_8_12_1 ;; 日耀神殿 1 层"
+    ],
+    [
+      "进入 areaid2_8_12_2 ;; 日耀神殿 2 层"
+    ],
+    [
+      "击杀 日耀守卫者-黎明，取得 (quest:日耀法珠)",
+      "开荒: (hint)__ 沿上方边缘前往 arena:竞技场 (img:craft)",
+      "小号: (hint)__ 沿上方边缘前往竞技场",
+      "使用 (img:portal) 返回 areaid2_8_town ;; 萨恩营地"
+    ],
+    [
+      "使用 (img:waypoint) 前往 areaid2_8_6 ;; 月影广场",
+      "沿 (img:7) 方向前往 areaid2_8_7_1_ ;; 月影神殿 1 层"
+    ],
+    [
+      "进入 areaid2_8_7_2 ;; 月影神殿 2 层",
+      "(hint)_ - 起始 (color:cc99ff)走廊 指向 (img:7) 或 (img:1)",
+      "(hint)_ - 沿地毯和该方向前进"
+    ],
+    [
+      "击杀 月影守卫者-暮色，取得 (quest:月影法珠)",
+      "(hint)_ - 沿 (color:cc99ff)向上 3 段楼梯 ，经过单个花盆",
+      "开荒: (hint)_ - (color:cc99ff)两扇大型门 通往 arena:竞技场 (img:craft)",
+      "小号: (hint)_ - (color:cc99ff)两扇大型门 通往竞技场",
+      "使用 (img:portal) 返回 areaid2_8_town ;; 萨恩营地"
+    ],
+    [
+      "使用 (img:waypoint) 前往 areaid2_8_6 ;; 月影广场",
+      "沿 (img:3) 方向前往 areaid2_8_13 ;; 港湾大桥"
+    ],
+    [
+      "沿 (img:1) 方向前往 (img:arena) 神殿 (lvl:54+)",
+      "击杀 日耀女神与月影女神",
+      "进入 areaid2_9_1 ;; 赤红通道"
+    ]
+  ],
+  [
+    [
+      "刷到 58-62 级",
+      "进入 areaid2_9_town ;; 统治者之殿",
+      "沿 (img:1) 方向前往 areaid2_9_2 ;; 斜坡"
+    ],
+    [
+      "到达 areaid2_9_3 ;; 贫瘠之地",
+      "(hint)__ 第 1 段向 (img:1) 前进 || 其余路线为线性"
+    ],
+    [
+      "可选: <珠宝>: 向 (img:1) 前进，选择一座 (color:cc99ff)雕像",
+      "沿 (img:2) 方向前进，激活 (img:waypoint) || 找到 (img:quest) (quest:宝箱)",
+      "(hint)__ 通常位于 (img:waypoint) 附近或远处 (img:5)",
+      "沿 (img:0) 方向前往 areaid2_9_5 ;; 巨石丘陵"
+    ],
+    [
+      "向 (img:1) 前进，激活 (img:waypoint)",
+      "进入 areaid2_9_6 ;; 沸水湖泊"
+    ],
+    [
+      "可选: 2 个 (color:cc99ff)地心化石 : 向 (img:7) 前进",
+      "向 (img:1) 前进，击杀 蛇怪，取得 (quest:蛇怪酸液)",
+      "(color:cc99ff)重登 : areaid2_9_town ;; 统治者之殿"
+    ],
+    [
+      "(img:quest) 佩塔卢斯和芙安珈: <武器/副手>",
+      "与 (img:quest) 罪交谈",
+      "(img:quest) 佩塔卢斯和芙安珈: (quest:风暴之瓶)",
+      "使用 (img:waypoint) 前往 areaid2_9_3 ;; 贫瘠之地"
+    ],
+    [
+      "沿 (img:1) 方向前往 areaid2_9_4 ;; 绿洲"
+    ],
+    [
+      "找到 (img:arena) 沙坑，击杀 沙之女神沙卡丽",
+      "(hint)__ 沿 (img:2) 边缘搜索",
+      "(color:cc99ff)重登 : areaid2_9_town ;; 统治者之殿"
+    ],
+    [
+      "(img:quest) 伊莎拉: (quest:技能之书)",
+      "使用 (img:waypoint) 前往 areaid2_9_5 ;; 巨石丘陵"
+    ],
+    [
+      "可选: (img:quest) <天赋重置点>",
+      "(hint)__ 击杀 巨石牛魔像 (color:lime)(命运之历)",
+      "沿 (img:7) 方向前往 areaid2_9_7 ;; 隧道"
+    ],
+    [
+      "开荒: 可选: 随机 (color:cc99ff)变异宝石 :",
+      "(hint)__ 试炼中 (img:0) 墙上的开关",
+      "开荒: 完成 (img:lab) 试炼",
+      "(hint)__ 位于带有 (img:help) 图标的支路",
+      "进入 areaid2_9_8 ;; 采石场"
+    ],
+    [
+      "沿 (img:7) 方向前往 (img:waypoint) _|| 沿 (img:1) 方向前往 (img:arena) 出口",
+      "(color:ff00ff)若找到 (color:cc99ff)神殿 : (img:in-out2) (color:ff8000)风暴女神格鲁坎 (color:lime)(领袖之羽)",
+      "(hint)__ 然后沿边缘沿 (img:6) 方向前往 (img:arena) 精炼厂",
+      "(color:ff00ff)否则进入 areaid2_9_9 ;; 精炼厂"
+    ],
+    [
+      "先向 (img:7)，再沿 (img:1) 方向前往 (img:quest) 图标",
+      "开荒: (hint)__ (img:craft) 位于轨道尽头的铁栅栏处",
+      "击杀 阿杜斯将军，取得 (img:quest) (quest:特拉珊粉)",
+      "(color:cc99ff)重登 : areaid2_9_town ;; 统治者之殿"
+    ],
+    [
+      "(quest:领袖之羽) ? (img:quest) 伊莎拉: (quest:技能之书)",
+      "可选: (quest:命运之历) ? (img:quest) 佩塔卢斯和芙安珈: <天赋重置点>",
+      "使用 (img:waypoint) 前往 areaid2_9_8 ;; 采石场"
+    ],
+    [
+      "与 (img:quest) 罪交谈",
+      "(color:ff00ff)若尚未找到 (quest:领袖之羽) :",
+      "(hint)_ - 向 (img:6) / (img:5) 前往 (color:cc99ff)神殿 ，击杀 arena:风暴女神格鲁坎",
+      "(hint)_ - (color:cc99ff)重登 : (img:quest) 伊莎拉 || 使用 (img:waypoint) 前往 areaid2_9_8 ;; 采石场",
+      "进入 areaid2_9_10_1 ;; 巨兽沼泽"
+    ],
+    [
+      "向 (img:4) 前进，检查东侧是否堵塞:",
+      "(hint)_ - (color:ff00ff)若堵塞: 先向 (img:6)，再向 (img:1)",
+      "(hint)_ - (color:ff00ff)否则尽量向 (img:6) 前进",
+      "进入 areaid2_9_10_2 ;; 育灵之室"
+    ],
+    [
+      "走 (color:cc99ff)第二条路 ，沿 (img:0) 方向前往 (img:arena) 核心",
+      "(img:quest) 罪 || 清理 (color:cc99ff)3 个子区域",
+      "(img:quest) 罪 || 击杀 不洁三巨头",
+      "(img:quest) 丽莉: areaid2_10_town ;; 奥瑞亚港"
+    ]
+  ],
+  [
+    [
+      "进入 areaid2_10_1 ;; 教堂顶楼"
+    ],
+    [
+      "向 (img:0) 前进，击杀 瘟疫之源",
+      "沿 (img:3) 方向前往 areaid2_10_2 ;; 广场遗迹"
+    ],
+    [
+      "沿 (img:3) 方向前往喷泉，开启 (img:portal)",
+      "向 (img:2) 前进，再向 (img:1) || 激活 (img:waypoint)",
+      "沿 (img:3) 方向前往 areaid2_10_3 ;; 化作火海的高庭"
+    ],
+    [
+      "到达 areaid2_10_4 ;; 亵渎之间",
+      "(hint)__ (color:cc99ff)起点 与 (color:cc99ff)出口 位于相邻的两个角落"
+    ],
+    [
+      "沿 (img:0) 边缘走，击杀 重塑之阿瓦留斯",
+      "开荒: (hint)__ (img:craft): 沿 (img:4) 边缘的走廊",
+      "向 (img:3) 前进，使用 (img:waypoint) 前往 areaid2_10_town (img:town) ;; 奥瑞亚港"
+    ],
+    [
+      "与 (img:quest) 巴农交谈",
+      "进入 (img:portal) areaid2_10_2 ;; 广场遗迹"
+    ],
+    [
+      "沿 (img:5) 方向前往 areaid2_10_7 ;; 控制区"
+    ],
+    [
+      "向远处的 (img:6) 前进，击杀 薇伦塔",
+      "使用 (img:portal) 前往 areaid2_10_town ;; 奥瑞亚港"
+    ],
+    [
+      "(img:quest) 拉尼: (color:8787fe)药剂 || <护甲> || (quest:技能之书) ;; 瘟疫之源 || 重塑之阿瓦留斯 || 薇伦塔",
+      "小号: 完成 (img:lab) 无情帝王迷宫",
+      "使用 (img:waypoint) 前往 areaid2_10_2 ;; 广场遗迹"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "进入 areaid2_10_9 ;; 藏古堂"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "可选: (color:cc99ff)1000 万宝石经验（费斯特的透镜）:",
+        "(hint)__ 试炼起点的角落开关",
+        "沿边缘走，完成 (img:lab) 试炼",
+        "(hint)__ (img:craft) 与 (img:lab) 位于 (img:quest) (quest:真爱药水) 附近（<2点天赋重置点>）",
+        "(color:cc99ff)重登 : areaid2_10_town ;; 奥瑞亚港"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(quest:真爱药水) ? (img:quest) 威勒姆: <天赋重置点>",
+        "完成 (img:lab) 无情帝王迷宫",
+        "使用 (img:waypoint) 前往 areaid2_10_2 ;; 广场遗迹"
+      ]
+    },
+    [
+      "与 (img:quest) 纯净之神交谈",
+      "进入 areaid2_10_5 ;; 藏骸运河"
+    ],
+    [
+      "沿区域向 (img:7) 前进",
+      "进入 areaid2_10_6 ;; 饲槽"
+    ],
+    [
+      "向 (img:7) 前进 || 与 (img:quest) 罪交谈 || 击杀 奇塔弗",
+      "与 (img:quest) 罪交谈 || 进入 areaid2_10_town ;; 奥瑞亚港"
+    ],
+    [
+      "(img:quest) 拉尼: (quest:技能之书)",
+      "(img:quest) 丽莉: areaid2_11_endgame_town ;; 卡鲁海滩"
+    ],
+    [
+      "开荒: 解锁 (img:craft) 工艺配方 || (color:cc99ff)重登 : 与 (img:quest) 指挥官奇拉克交谈",
+      "<在聊天框中输入_\"/passives\">",
+      "<章节追踪指南到此结束>"
+    ]
+  ]
+]

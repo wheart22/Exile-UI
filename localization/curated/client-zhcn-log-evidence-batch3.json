@@ -1,0 +1,19 @@
+{
+  "zh-CN": {
+    "client.txt::key=system_fullstop::occ=1": "。",
+    "client.txt::key=system_parenthesis::occ=1": "（#）",
+    "client.txt::key=log_level::occ=1": "目前等级",
+    "client.txt::key=log_slain::occ=1": "被击败了",
+    "client.txt::key=log_killed::occ=1": "你一共消灭了 # 只怪物",
+    "client.txt::key=log_delirium::occ=1": "奇怪的声音:",
+    "client.txt::key=log_blight::occ=1": "卡西娅修女:",
+    "client.txt::key=log_incursion::occ=1": "阿尔瓦，探索大师:",
+    "client.txt::key=log_bestiary::occ=1": "伊恩哈尔，魔兽大师:",
+    "client.txt::key=log_delve::occ=1": "尼克，地心大师:",
+    "client.txt::key=log_maven::occ=1": "贤主:",
+    "client.txt::key=log_expedition::occ=1": "丹宁:",
+    "client.txt::key=log_expedition::occ=2": "桂温妮:",
+    "client.txt::key=log_expedition::occ=3": "罗格:",
+    "client.txt::key=log_expedition::occ=4": "图金:"
+  }
+}

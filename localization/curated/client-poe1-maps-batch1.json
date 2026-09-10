@@ -1,0 +1,18 @@
+{
+  "zh-CN": {
+    "client.txt::key=maps_heist::occ=1": "夺宝奇兵",
+    "client.txt::key=maps_logbook::occ=1": "先祖秘藏日志",
+    "client.txt::key=maps_delirium::occ=1": "梦魇拟像",
+    "client.txt::key=maps_hunger::occ=1": "无限饥渴",
+    "client.txt::key=maps_blackstar::occ=1": "漆黑之星",
+    "client.txt::key=maps_exarch::occ=1": "焚界者",
+    "client.txt::key=maps_eater::occ=1": "灭界者",
+    "client.txt::key=maps_shaper::occ=1": "塑界者",
+    "client.txt::key=maps_elder::occ=1": "裂界者",
+    "client.txt::key=maps_atziri::occ=1": "阿兹里",
+    "client.txt::key=maps_sirus::occ=1": "希鲁斯",
+    "client.txt::key=maps_cortex::occ=1": "脑层",
+    "client.txt::key=maps_ritualboss::occ=1": "迷雾之王",
+    "client.txt::key=maps_ritualboss::occ=2": "虚无症结"
+  }
+}

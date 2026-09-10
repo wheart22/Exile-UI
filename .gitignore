@@ -21,3 +21,9 @@ img/*.jpg
 # files created by specific features on demand
 data/global/?stash-ninja??prices*
 data/global/leagues*.json
+
+# Localizer build outputs are reproducible and stay out of the source tree.
+localization/reports/
+localization/state/
+localization/packs/
+localization/releases/

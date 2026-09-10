@@ -1,0 +1,23 @@
+{
+  "zh-CN": {
+    "[leveltracker] default guide.json::/9/0/0": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 教堂顶楼",
+    "[leveltracker] default guide.json::/9/1/0": "向 __XUI_TOKEN_001__ 前进，__XUI_TOKEN_002__ 瘟疫之源",
+    "[leveltracker] default guide.json::/9/1/1": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 广场遗迹",
+    "[leveltracker] default guide.json::/9/2/0": "向 __XUI_TOKEN_001__ 前往喷泉，设置 __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/9/2/1": "向 __XUI_TOKEN_001__ 前进，沿小巷走，取得 __XUI_TOKEN_002__",
+    "[leveltracker] default guide.json::/9/2/2": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 化作火海的高庭",
+    "[leveltracker] default guide.json::/9/3/0": "到达 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 亵渎之间",
+    "[leveltracker] default guide.json::/9/3/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__起点 与 __XUI_TOKEN_003__出口 位于相邻的两个角落",
+    "[leveltracker] default guide.json::/9/4/0": "沿 __XUI_TOKEN_001__ 边缘走，__XUI_TOKEN_002__ 重塑之阿瓦留斯",
+    "[leveltracker] default guide.json::/9/4/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ __XUI_TOKEN_003__: 沿 __XUI_TOKEN_004__ 边缘的走廊",
+    "[leveltracker] default guide.json::/9/4/2": "向 __XUI_TOKEN_001__ 前进，使用 __XUI_TOKEN_002__ 前往 __XUI_TOKEN_003__ __XUI_TOKEN_004__ __XUI_TOKEN_005__ 奥瑞亚港",
+    "[leveltracker] default guide.json::/9/5/0": "与 __XUI_TOKEN_001__ 巴农交谈",
+    "[leveltracker] default guide.json::/9/5/1": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ __XUI_TOKEN_003__ 广场遗迹",
+    "[leveltracker] default guide.json::/9/6/0": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 控制区",
+    "[leveltracker] default guide.json::/9/7/0": "向远处的 __XUI_TOKEN_001__ 前进，__XUI_TOKEN_002__ 薇伦塔",
+    "[leveltracker] default guide.json::/9/7/1": "使用 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 奥瑞亚港",
+    "[leveltracker] default guide.json::/9/8/0": "__XUI_TOKEN_001__ 拉尼: __XUI_TOKEN_002__药剂 __XUI_TOKEN_003__ __XUI_TOKEN_004__ __XUI_TOKEN_005__ __XUI_TOKEN_006__ __XUI_TOKEN_007__ 瘟疫之源 __XUI_TOKEN_008__ 重塑之阿瓦留斯 __XUI_TOKEN_009__ 薇伦塔",
+    "[leveltracker] default guide.json::/9/8/1": "__XUI_TOKEN_001__ 完成 __XUI_TOKEN_002__ 无情帝王迷宫",
+    "[leveltracker] default guide.json::/9/8/2": "使用 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 广场遗迹"
+  }
+}

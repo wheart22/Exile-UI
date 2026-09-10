@@ -1,3 +1,40 @@
+## Exile UI PoE1 简体中文分支
+
+本分支 `poe1-zh-CN` 基于 [Lailloken/Exile-UI](https://github.com/Lailloken/Exile-UI) 的最新 `main`，保留上游 PoE1/PoE2 程序与英文数据。
+语言包只提供 PoE1 简体中文资源，PoE2 指南和 PoE2 宝石数据保持英文。
+
+主要包含：
+
+- PoE1 界面、剧情追踪器、主线指南、区域名称和帮助文本；
+- PoB 导入后的宝石显示为“简体中文名（English name）”；
+- 宝石数据库保留英文内部键，因此英文游戏客户端搜索逻辑不变；
+- 不修改上游 AHK 程序，也不添加定时 GitHub Actions。
+
+### 安装语言包
+
+运行 `localization/tools/localize.py build --locale zh-CN --allow-partial` 生成语言包，或使用
+`localization/tools/package_release.py` 生成可分发压缩包。将压缩包内的 `data/zh-CN/` 合并到
+Exile UI 根目录的 `data/` 下，再在设置中选择 `zh-CN`。
+
+### 手动同步上游
+
+同步前请确认工作区没有未提交修改：
+
+```powershell
+git fetch upstream main
+git checkout poe1-zh-CN
+git merge upstream/main
+python localization/tools/localize.py sync
+python localization/tools/localize.py build --locale zh-CN --allow-partial
+python localization/tools/localize.py validate
+python -m unittest discover -s localization/tests -p "test_*.py"
+python localization/tools/package_release.py
+```
+
+同步后必须审阅 `localization/reports/sync.json` 中的新增、修改和删除文案；如果上游新增或修改
+PoE1 宝石，先更新 `localization/glossary/gems-zh-CN.json`，再重新构建。缺少宝石翻译会阻止正式
+发布。完整规则见 [`localization/docs/RELEASE-PROCESS.md`](localization/docs/RELEASE-PROCESS.md)。
+
 ## About:
 A light-weight AHK overlay with UI and QoL features for Path of Exile 1 and 2, emphasizing ease-of-use, minimalist design, low hotkey requirements, and seamless integration into the game-client. Formerly Lailloken UI.  
 **`This project is not affiliated with or endorsed by Grinding Gear Games (GGG) in any way`**.

@@ -1,0 +1,25 @@
+{
+  "zh-CN": {
+    "UI.txt::key=global_tiers::occ=1": "T1",
+    "UI.txt::key=global_tiers::occ=2": "T2",
+    "UI.txt::key=global_tiers::occ=3": "T3",
+    "UI.txt::key=global_league_rites::occ=1": "祭祀活动",
+    "UI.txt::key=global_omnikey::occ=1": "全能键",
+    "UI.txt::key=global_omnikey::occ=2": "全能",
+    "UI.txt::key=global_notification::occ=1": "通知",
+    "UI.txt::key=global_shared::occ=1": "共享",
+    "UI.txt::key=global_separate::occ=1": "独立",
+    "UI.txt::key=global_style::occ=1": "样式",
+    "UI.txt::key=mechanic_hideout::occ=1": "藏身处",
+    "UI.txt::key=msg_clientswitch::occ=1": "切换客户端？",
+    "UI.txt::key=msg_clientswitch::occ=2": "你已切换到另一个游戏客户端，要同时切换/重启工具吗？",
+    "UI.txt::key=msg_clientswitch::occ=3": "如果不切换，请启动正确的客户端，然后点击<否>",
+    "UI.txt::key=lootfilter_notification::occ=1": "同步物品过滤器",
+    "UI.txt::key=ocr_debug::occ=1": "故障排查中……",
+    "UI.txt::key=ocr_closetooltip::occ=1": "（按 Esc/快捷键）",
+    "[leveltracker] default guide.json::/0/18/0": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ 费尔船长 __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/0/18/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ 费尔船长",
+    "[leveltracker] default guide.json::/0/18/2": "前往 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 怨忿之窟",
+    "[leveltracker] default guide.json::/0/18/3": "__XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ __XUI_TOKEN_004__ 狮眼守望"
+  }
+}

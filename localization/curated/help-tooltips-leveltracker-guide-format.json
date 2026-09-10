@@ -1,0 +1,22 @@
+{
+  "zh-CN": {
+    "help tooltips.json::/settings/leveltracker guide format info/0": "每一行都包含一个或多个需要完成的步骤",
+    "help tooltips.json::/settings/leveltracker guide format info/1": "__XUI_TOKEN_001__ 缩进的行用于补充说明上一项步骤",
+    "help tooltips.json::/settings/leveltracker guide format info/2": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/3": "__XUI_TOKEN_001__多项任务 / __XUI_TOKEN_002__寻找多个目标 : 部分步骤包含多个需要完成的子目标",
+    "help tooltips.json::/settings/leveltracker guide format info/4": "__XUI_TOKEN_001__ 可按任意顺序或同时完成（取决于区域布局）",
+    "help tooltips.json::/settings/leveltracker guide format info/5": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/6": "__XUI_TOKEN_001__ 带加号的行表示可选步骤",
+    "help tooltips.json::/settings/leveltracker guide format info/7": "__XUI_TOKEN_001__ 可在设置中通过 __XUI_TOKEN_002__ 开关显示或隐藏",
+    "help tooltips.json::/settings/leveltracker guide format info/8": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/9": "交付任务时，__XUI_TOKEN_001__ 表示该 NPC 还有排队等待处理的任务",
+    "help tooltips.json::/settings/leveltracker guide format info/10": "__XUI_TOKEN_001__ 这些任务没有相关奖励，可以跳过",
+    "help tooltips.json::/settings/leveltracker guide format info/11": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/12": "出现 __XUI_TOKEN_001__ 或 __XUI_TOKEN_002__青色高亮 时，按住组件键可查看更多信息",
+    "help tooltips.json::/settings/leveltracker guide format info/13": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/14": "__XUI_TOKEN_001__ 区域名称，目标为 x：表示“进入 __XUI_TOKEN_002__区域 取得 x，然后再次离开”",
+    "help tooltips.json::/settings/leveltracker guide format info/15": "__XUI_TOKEN_001__",
+    "help tooltips.json::/settings/leveltracker guide format info/16": "__XUI_TOKEN_001__、__XUI_TOKEN_002__：这些图标表示东、南、西、北等方向",
+    "help tooltips.json::/settings/leveltracker guide format info/17": "__XUI_TOKEN_001__ 直线路径有时会被阻挡，需要绕行"
+  }
+}

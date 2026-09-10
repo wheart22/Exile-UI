@@ -1,0 +1,160 @@
+game,category,name_en,name_zh,source,note
+shared,ui,Path of Exile,流放之路,official,游戏名称
+poe1,area,The Archives,档案室,official,第三章区域
+poe1,area,Aspirants' Plaza,试炼者广场,official,迷宫入口区域
+poe1,area,The Upper Sceptre of God,神权之塔上层,official,第三章区域
+poe1,area,The Dried Lake,干涸湖岸,official,第四章区域
+poe1,area,The Mines Level 1,漆黑矿坑 1 层,official,第四章区域
+poe1,area,The Mines Level 2,漆黑矿坑 2 层,official,第四章区域
+poe1,area,The Crystal Veins,水晶矿脉,official,第四章区域
+poe1,area,The Grand Arena,大竞技场,official,第四章区域
+poe1,area,The Belly of the Beast Level 1,巨兽沼泽 1 层,official,第四章区域
+poe1,area,The Belly of the Beast Level 2,巨兽沼泽 2 层,official,第四章区域
+poe1,boss,Voll,福尔,official,第四章 Boss 简称
+poe1,area,Chamber of Sins,罪孽之殿,official,区域地图简称
+poe1,area,Lunaris Temple,月影神殿,official,区域地图简称
+poe1,area,Merveil's Caverns,海妖洞穴,official,第一章区域地图简称
+poe1,area,The Prison,禁灵之狱,official,第一章区域地图简称
+poe1,area,The Crypt (2),寂静陵墓 2 楼,official,第七章区域
+poe1,area,Temple of Decay (2),坠欲之殿 2 层,official,第七章区域
+poe1,area,Hidden Underbelly,隐秘腹地,official,第八章区域
+poe1,area,Karui Shores,卡鲁海滩,official,尾声区域
+poe1,boss,Casticus,审判长卡斯提克斯,official,第五章 Boss 简称
+poe1,boss,Kitava,奇塔弗,official,第五章 Boss 简称
+poe1,boss,Overseer Krow,监工头克劳,official,第五章 Boss
+poe1,boss,The Dishonoured Queen,卡鲁长者,official,第六章 Boss
+poe1,npc,Lilly,丽莉,official,NPC 简称
+poe1,boss,Abberath,割裂者艾贝拉斯,official,第六章 Boss 简称
+poe1,boss,Ryslatha,食腐虫后,official,第六章 Boss 简称
+poe1,boss,Tsoagoth,惊海之王索亚格斯,official,第六章 Boss 简称
+poe1,npc,Weylam,威勒姆,official,NPC 简称
+poe1,boss,Maligaro,马雷格罗,official,第七章 Boss 简称
+poe1,boss,Greust,受拉克斯操纵的古斯特,official,第七章 Boss 简称
+poe1,boss,Gruthkul,格鲁丝克,official,第七章 Boss 简称
+poe1,boss,Arakaali,阿拉卡力,official,第七章 Boss 简称
+poe1,npc,Eramir,艾米尔,official,NPC 简称
+poe1,npc,Helena,赫莲娜,official,NPC 简称
+poe1,npc,Silk,斯克,official,NPC 简称
+poe1,npc,Yeena,伊娜,official,NPC 简称
+poe1,lab,cruel_lab,残酷帝王迷宫,official,指南内部简称
+poe1,item,utility_flask,功能药剂,official,指南内部简称
+poe1,mechanic,vaaled,瓦尔化,official,指南内部简称
+poe1,mechanic,smuggler's_cache,走私者的秘宝,official,第八章指南内部简称
+poe1,item,scours,重铸石,official,通货简称
+poe1,boss,Doedre,暗语者德瑞,official,第八章 Boss 简称
+poe1,boss,Yugul,恐惧之源尤格尔,official,第八章 Boss 简称
+poe1,boss,Dawn,日耀守卫者-黎明,official,第八章 Boss 简称
+poe1,boss,Dusk,月影守卫者-暮色,official,第八章 Boss 简称
+poe1,boss,solaris_&_lunaris,日耀女神与月影女神,official,第八章双 Boss 内部简称
+poe1,boss,legion,古灵使徒斗士,official,第八章指南内部简称
+poe1,npc,Hargan,贺根,official,NPC 简称
+poe1,mechanic,heist,夺宝,official,玩法名称
+poe1,item,delve_fossil,地心化石,official,第九章指南内部简称
+poe1,gem,transfig._gem,变异宝石,official,第九章指南内部简称
+poe1,boss,Basilisk,蛇怪,official,第九章 Boss 简称
+poe1,boss,Shakari,沙之女神沙卡丽,official,第九章 Boss 简称
+poe1,boss,Boulderback,巨石牛魔像,official,第九章 Boss 简称
+poe1,boss,Garukhan,风暴女神格鲁坎,official,第九章 Boss 简称
+poe1,boss,Adus,阿杜斯将军,official,第九章 Boss 简称
+poe1,boss,depraved_trinity,不洁三巨头,official,第九章指南内部简称
+poe1,npc,Petarus,佩塔卢斯和芙安珈,official,NPC 指南简称
+poe1,item,calendar,命运之历,official,第九章彩色任务物品简称
+poe1,item,feather,领袖之羽,official,第九章彩色任务物品简称
+poe1,boss,Plaguewing,瘟疫之源,official,第十章 Boss 名称
+poe1,boss,Avarius,重塑之阿瓦留斯,official,第十章 Boss 简称
+poe1,npc,Kirac,指挥官奇拉克,official,NPC 简称
+poe1,lab,merciless_lab,无情帝王迷宫,official,指南内部简称
+poe1,item,Facetor's Lens,费斯特的透镜,official,第十章特殊通货
+poe1,ui,inventory,物品栏,official,游戏界面术语
+poe1,ui,skilltree,天赋树,official,游戏界面术语
+poe1,ui,ascendancy-tree,升华天赋树,official,游戏界面术语
+poe1,ui,atlas,异界图鉴,official,游戏界面术语
+poe1,ui,stash,仓库,official,游戏界面术语
+poe1,ui,item level,物品等级,official,游戏界面术语
+poe1,ui,currency exchange,通货交易,official,游戏界面术语
+poe1,ui,currency,通货,official,游戏界面术语
+poe1,ui,gem,宝石,official,游戏界面术语
+poe1,ui,gems,宝石,official,游戏界面术语
+poe1,ui,map,地图,official,游戏界面术语
+poe1,ui,maps,地图,official,游戏界面术语
+poe1,ui,league,赛季,official,游戏界面术语
+poe1,mechanic,bestiary,猎魔,official,赛季机制
+poe1,mechanic,betrayal,反叛,official,赛季机制
+poe1,mechanic,blight,菌潮,official,赛季机制
+poe1,mechanic,delirium,迷雾,official,赛季机制
+poe1,mechanic,delve,地心,official,赛季机制
+poe1,mechanic,expedition,探险,official,赛季机制
+poe1,mechanic,harvest,丰收,official,赛季机制
+poe1,mechanic,incursion,穿越,official,赛季机制
+poe1,mechanic,legion,军团,official,赛季机制
+poe1,mechanic,ritual,祭祀,official,赛季机制
+poe1,mechanic,vaal area,瓦尔区域,official,赛季机制
+poe1,mechanic,abyssal depths,深渊地穴,official,赛季机制
+poe1,mechanic,lab trial,升华试炼,official,游戏机制
+poe1,mechanic,starfall crater,星落陨坑,official,游戏机制
+poe1,mechanic,ultimatum,最后通牒,official,赛季机制
+poe1,npc,maven,释界,official,终局 NPC
+poe1,boss,baran,巴兰,official,征服者简称
+poe1,boss,drox,德罗克,official,征服者简称
+poe1,boss,al-hezmin,奥赫兹敏,official,征服者简称
+poe1,boss,veritania,维里塔尼亚,official,征服者简称
+poe1,boss,constrictor,约束者,official,裂界守卫简称
+poe1,boss,enslaver,奴役者,official,裂界守卫简称
+poe1,boss,eradicator,根除者,official,裂界守卫简称
+poe1,boss,purifier,净化者,official,裂界守卫简称
+poe1,npc,nameless seer,无名先知,official,游戏 NPC
+poe1,mechanic,reflecting mist,倒影迷雾,official,游戏机制
+poe1,mechanic,infamous mercenary,恶名雇佣兵,official,游戏机制
+poe1,mechanic,high graftblood,高嫁接之血,official,游戏机制
+poe1,betrayal,aisling,爱斯林,official,密教成员简称
+poe1,betrayal,cameria,卡美利亚,official,密教成员简称
+poe1,betrayal,elreon,艾尔雷恩,official,密教成员简称
+poe1,betrayal,gravicius,格拉维奇,official,密教成员简称
+poe1,betrayal,guff,古夫,official,密教成员简称
+poe1,betrayal,haku,哈库,official,密教成员简称
+poe1,betrayal,hillock,西拉克,official,密教成员简称
+poe1,betrayal,it,逃逸怪,official,密教成员简称
+poe1,betrayal,janus,杨纳斯,official,密教成员简称
+poe1,betrayal,jorgin,尤尔金,official,密教成员简称
+poe1,betrayal,korell,克雷尔,official,密教成员简称
+poe1,betrayal,leo,里奥,official,密教成员简称
+poe1,betrayal,riker,莱克,official,密教成员简称
+poe1,betrayal,rin,麟玉树,official,密教成员简称
+poe1,betrayal,tora,托拉,official,密教成员简称
+poe1,betrayal,vagan,瓦甘,official,密教成员简称
+poe1,betrayal,vorici,瓦里西,official,密教成员简称
+poe1,betrayal,transportation,传送使,official,密教部门
+poe1,betrayal,fortification,御防使,official,密教部门
+poe1,betrayal,research,修研使,official,密教部门
+poe1,betrayal,intervention,调停使,official,密教部门
+poe1,betrayal,trans,传送,official,密教部门缩写
+poe1,betrayal,fort,御防,official,密教部门缩写
+poe1,betrayal,research,修研,official,密教部门缩写
+poe1,betrayal,inter,调停,official,密教部门缩写
+poe1,sanctum,sanctum archives,圣所档案室,official,圣所楼层
+poe1,sanctum,sanctum vaults,圣所宝库,official,圣所楼层
+poe1,sanctum,sanctum cathedral,圣所教堂,official,圣所楼层
+poe1,sanctum,sanctum necropolis,禁域墓场,official,圣所楼层
+poe1,sanctum,scriptorium,墓影书坊,official,圣所房间
+poe1,sanctum,reliquary,圣物间,official,圣所房间
+poe1,sanctum,sanctum bellum,圣域战火,official,圣所房间
+poe1,sanctum,mausoleum,静缢陵墓,official,圣所房间
+poe1,sanctum,abandoned library,废弃图书馆,official,圣所房间
+poe1,sanctum,decrepit cellar,老旧地窖,official,圣所房间
+poe1,sanctum,halls of worship,信奉厅堂,official,圣所房间
+poe1,sanctum,undercroft,教堂之窖,official,圣所房间
+poe1,sanctum,chambers of inscription,铭文室,official,圣所房间
+poe1,sanctum,derelict caverns,弃坑,official,圣所房间
+poe1,sanctum,unholy lair,不洁巢穴,official,圣所房间
+poe1,sanctum,lost catacombs,失落地下墓冢,official,圣所房间
+poe1,sanctum,holy trials,圣光试炼,official,圣所房间
+poe1,sanctum,gauntlet,冒险,official,圣所房间
+poe1,sanctum,crucible,酷刑,official,圣所房间
+poe1,sanctum,entombment,埋葬,official,圣所房间
+poe1,sanctum,templar annals,圣殿编史,official,圣所房间
+poe1,sanctum,battlegrounds,战地,official,圣所房间
+poe1,sanctum,infernum,炼狱,official,圣所房间
+poe1,sanctum,desecrated crypt,亵渎地窖,official,圣所房间
+poe1,sanctum,boon,恩赐,official,圣所机制
+poe1,sanctum,affliction,苦痛,official,圣所机制
+poe1,sanctum,inspiration,启迪,official,圣所机制

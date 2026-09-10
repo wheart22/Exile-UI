@@ -1,0 +1,33 @@
+{
+  "zh-CN": {
+    "[leveltracker] default guide.json::/8/10/0": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ 随机 __XUI_TOKEN_003__变异宝石 :",
+    "[leveltracker] default guide.json::/8/10/1": "__XUI_TOKEN_001__ 试炼中 __XUI_TOKEN_002__ 墙上的开关",
+    "[leveltracker] default guide.json::/8/10/2": "__XUI_TOKEN_001__ 完成 __XUI_TOKEN_002__ 试炼",
+    "[leveltracker] default guide.json::/8/10/3": "__XUI_TOKEN_001__ 位于带有 __XUI_TOKEN_002__ 图标的支路",
+    "[leveltracker] default guide.json::/8/10/4": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 采石场",
+    "[leveltracker] default guide.json::/8/11/0": "向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ ___XUI_TOKEN_003__ 向 __XUI_TOKEN_004__ 前往 __XUI_TOKEN_005__ 出口",
+    "[leveltracker] default guide.json::/8/11/1": "若找到 __XUI_TOKEN_001__神殿 : __XUI_TOKEN_002__ __XUI_TOKEN_003__风暴女神格鲁坎 __XUI_TOKEN_004__(领袖之羽)",
+    "[leveltracker] default guide.json::/8/11/2": "__XUI_TOKEN_001__ 然后沿边缘向 __XUI_TOKEN_002__ 前往 __XUI_TOKEN_003__ 精炼厂",
+    "[leveltracker] default guide.json::/8/11/3": "否则进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 精炼厂",
+    "[leveltracker] default guide.json::/8/12/0": "先向 __XUI_TOKEN_001__，再向 __XUI_TOKEN_002__ 前往 __XUI_TOKEN_003__ 图标",
+    "[leveltracker] default guide.json::/8/12/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__ __XUI_TOKEN_003__ 位于轨道尽头的铁栅栏处",
+    "[leveltracker] default guide.json::/8/12/2": "__XUI_TOKEN_001__ 阿杜斯将军，取得 __XUI_TOKEN_002__ __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/12/3": "__XUI_TOKEN_001__重登 : __XUI_TOKEN_002__ __XUI_TOKEN_003__ 统治者之殿",
+    "[leveltracker] default guide.json::/8/13/0": "__XUI_TOKEN_001__? __XUI_TOKEN_002__ 伊莎拉: __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/13/1": "__XUI_TOKEN_001__ __XUI_TOKEN_002__? __XUI_TOKEN_003__ 佩塔卢斯和芙安珈: __XUI_TOKEN_004__",
+    "[leveltracker] default guide.json::/8/13/2": "使用 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 采石场",
+    "[leveltracker] default guide.json::/8/14/0": "与 __XUI_TOKEN_001__ 罪交谈",
+    "[leveltracker] default guide.json::/8/14/1": "若尚未找到 __XUI_TOKEN_001__:",
+    "[leveltracker] default guide.json::/8/14/2": "__XUI_TOKEN_001__ - 向 __XUI_TOKEN_002__ / __XUI_TOKEN_003__ 前往 __XUI_TOKEN_004__神殿 ，击杀 __XUI_TOKEN_005__风暴女神格鲁坎",
+    "[leveltracker] default guide.json::/8/14/3": "__XUI_TOKEN_001__ - __XUI_TOKEN_002__重登 : __XUI_TOKEN_003__ 伊莎拉 __XUI_TOKEN_004__ 使用 __XUI_TOKEN_005__ 前往 __XUI_TOKEN_006__ __XUI_TOKEN_007__ 采石场",
+    "[leveltracker] default guide.json::/8/14/4": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 巨兽沼泽",
+    "[leveltracker] default guide.json::/8/15/0": "向 __XUI_TOKEN_001__ 前进，检查东侧是否堵塞:",
+    "[leveltracker] default guide.json::/8/15/1": "__XUI_TOKEN_001__ - 若堵塞: 先向 __XUI_TOKEN_002__，再向 __XUI_TOKEN_003__",
+    "[leveltracker] default guide.json::/8/15/2": "__XUI_TOKEN_001__ - 否则尽量向 __XUI_TOKEN_002__ 前进",
+    "[leveltracker] default guide.json::/8/15/3": "进入 __XUI_TOKEN_001__ __XUI_TOKEN_002__ 育灵之室",
+    "[leveltracker] default guide.json::/8/16/0": "走第 2 条路，向 __XUI_TOKEN_001__ 前往 __XUI_TOKEN_002__ 核心",
+    "[leveltracker] default guide.json::/8/16/1": "__XUI_TOKEN_001__ 罪 __XUI_TOKEN_002__ 清理 __XUI_TOKEN_003__3 个子区域",
+    "[leveltracker] default guide.json::/8/16/2": "__XUI_TOKEN_001__ 罪 __XUI_TOKEN_002__ __XUI_TOKEN_003__ 不洁三巨头",
+    "[leveltracker] default guide.json::/8/16/3": "__XUI_TOKEN_001__ 丽莉: __XUI_TOKEN_002__ __XUI_TOKEN_003__ 奥瑞亚港"
+  }
+}
