@@ -3,7 +3,7 @@
 	local
 	global vars, settings, Json, db
 
-	lang := LLK_IniRead("ini" vars.poe_version "\config.ini", "settings", "language", "english"), settings.general.lang := !FileExist("data\" lang "\UI.txt") ? "english" : lang
+	lang := LLK_IniRead("ini" vars.poe_version "\config.ini", "settings", "language", vars.poe_version ? "english" : "zh-CN"), settings.general.lang := !FileExist("data\" lang "\UI.txt") ? "english" : lang
 	If (lang != "english") ;load English help-tooltips into secondary object as a fallback (in case a translation is not up-to-date and missing certain tooltip-texts)
 		vars.help := Json.Load(LLK_FileRead("data\" (!FileExist("data\" lang "\help tooltips.json") ? "english" : lang) "\help tooltips.json",, "65001")), vars.help2 := Json.Load(LLK_FileRead("data\english\help tooltips.json",, "65001"))
 	Loop 2

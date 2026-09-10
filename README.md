@@ -18,7 +18,7 @@
 
 1. 如果没有 AutoHotkey v1.1，请先从 [AutoHotkey](https://www.autohotkey.com/) 安装。
 2. 双击解压目录中的 `Exile UI.ahk` 启动程序。
-3. 首次启动后，在设置的“常规/UI”区域将界面语言选择为 `zh-CN`。
+3. PoE1 首次启动默认使用 `zh-CN`；如需切换语言，可在设置的“常规/UI”区域修改。
 
 PoB 导入后的主动宝石、辅助宝石和宝石链接会显示为“简体中文名（English name）”；英文游戏客户端
 搜索逻辑保持不变。当前版本不包含中文 `client.txt`、物品文本和 OCR 适配。
