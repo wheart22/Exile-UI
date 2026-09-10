@@ -60,9 +60,21 @@ class TokenTests(unittest.TestCase):
         restored = localize.restore_tokens(masked, tokens)
         self.assertEqual(restored, '<在聊天框中输入_"/passives"> then <护甲>')
 
-    def test_quest_angle_label_uses_official_locale_term(self):
-        cn_masked, cn_tokens = localize.mask_tokens("<enemy_at_the_gate>", "zh-CN")
-        self.assertEqual(localize.restore_tokens(cn_masked, cn_tokens), "<大门口的敌人>")
+    def test_quest_angle_key_is_preserved_for_routing(self):
+        masked, tokens = localize.mask_tokens("<enemy_at_the_gate> and <the_siren's_cadence>", "zh-CN")
+        self.assertEqual(
+            localize.restore_tokens(masked, tokens),
+            "<enemy_at_the_gate> and <the_siren's_cadence>",
+        )
+
+    def test_quest_angle_key_has_a_chinese_display_label(self):
+        with tempfile.TemporaryDirectory() as folder:
+            destination = Path(folder) / localize.GUIDE_LABELS_NAME
+            done, total = localize.build_guide_labels("zh-CN", destination)
+            labels = localize.read_json(destination)
+        self.assertEqual((done, total), (len(localize.ANGLE_TOKEN_TRANSLATIONS["zh-CN"]),) * 2)
+        self.assertEqual(labels["enemy at the gate"], "大门口的敌人")
+        self.assertEqual(labels["the siren's cadence"], "海妖之歌")
 
     def test_unknown_visible_angle_text_is_preserved(self):
         masked, tokens = localize.mask_tokens("<future_upstream_label>", "zh-CN")
@@ -175,6 +187,29 @@ class GemTests(unittest.TestCase):
                     entry,
                 )
                 self.assertEqual(built[key]["name"], self.names[key])
+
+
+class OfflinePreviewTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.root = Path(__file__).parents[2]
+
+    def test_offline_entry_points_are_wired(self):
+        main = (self.root / "Exile UI.ahk").read_text(encoding="utf-8-sig")
+        launcher = (self.root / "Exile UI - Offline Preview.ahk").read_text(encoding="utf-8")
+        module = (self.root / "modules" / "offline preview.ahk").read_text(encoding="utf-8")
+        self.assertIn('arg = "--offline"', main)
+        self.assertIn("OfflinePreview_Start()", main)
+        self.assertIn("--offline", launcher)
+        self.assertIn("data\\zh-CN\\[leveltracker] gems.json", module)
+        self.assertIn("data\\zh-CN\\[leveltracker] guide labels.json", module)
+        self.assertIn("data\\zh-CN\\[leveltracker] default guide.json", module)
+
+    def test_offline_preview_data_is_localized(self):
+        gems = localize.read_json(self.root / "data" / "zh-CN" / "[leveltracker] gems.json")
+        guide = localize.read_json(self.root / "data" / "zh-CN" / "[leveltracker] default guide.json")
+        self.assertEqual(gems["absolution"]["name"], "赦罪（Absolution）")
+        self.assertEqual(len(guide), 10)
 
 
 if __name__ == "__main__":

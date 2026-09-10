@@ -29,7 +29,18 @@ OnExit("Exit")
 Menu, Tray, Tip, Exile UI
 Menu, Tray, Icon, img\GUI\tray.ico
 
-vars := {"general": {"runcheck": A_TickCount}, "logging": FileExist("data\log.txt"), "MainThread": 1, "news": {}, "update": [0]}, LLK_Log("waiting for valid game-clients...")
+offline_preview := 0
+For index, arg in A_Args
+	If (arg = "--offline" || arg = "--offline-preview" || arg = "/offline")
+		offline_preview := 1
+vars := {"general": {"runcheck": A_TickCount}, "logging": FileExist("data\log.txt"), "MainThread": 1, "news": {}, "update": [0]}
+If offline_preview
+{
+	vars.offline_preview := 1
+	OfflinePreview_Start()
+	Return
+}
+LLK_Log("waiting for valid game-clients...")
 timeout := [LLK_IniRead("ini\config.ini", "settings", "kill script", 1), LLK_IniRead("ini\config.ini", "settings", "kill-timeout", 1)]
 While !WinExist("ahk_class POEWindowClass") && !WinExist("ahk_exe GeForceNOW.exe") ;wait for game-client window
 {
@@ -149,6 +160,7 @@ Return
 #Include *i modules\hotkeys custom.ahk
 #Include modules\item-checker.ahk
 #Include modules\languages.ahk
+#Include modules\offline preview.ahk
 #Include modules\leveling tracker.ahk
 #Include modules\lootfilter.ahk
 #Include modules\macros.ahk
@@ -172,6 +184,13 @@ Exit()
 {
 	local
 	global vars, settings, Json
+
+	If vars.offline_preview
+	{
+		If IsObject(vars.general) && vars.general.Gdip
+			Gdip_Shutdown(vars.general.Gdip)
+		Return
+	}
 
 	Gdip_Shutdown(vars.general.Gdip)
 	vars.log.file.Close()

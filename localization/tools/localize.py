@@ -28,6 +28,7 @@ MANUAL_GLOSSARY = WORK / "glossary" / "manual.csv"
 QUEST_LABELS_FILE = WORK / "glossary" / "quest-labels.json"
 SEEDS_FILE = WORK / "translations" / "seeds.json"
 GEM_NAMES_FILE = WORK / "glossary" / "gems-zh-CN.json"
+GUIDE_LABELS_NAME = "[leveltracker] guide labels.json"
 SUPPORTED = ("zh-CN",)
 DEFAULT_FILES = (
     "UI.txt",
@@ -121,9 +122,9 @@ CONTROL_TRANSLATIONS = {
     "zh-CN": {"leaguestart:": "开荒:", "twinkrun:": "小号:", "optional:": "可选:", "kill": "击杀"},
 }
 
-# Angle brackets are renderer-visible emphasis. Their delimiters are syntax,
-# but their contents are player-facing quest/reward labels and must be
-# localized. Keep the delimiters while translating every known guide label.
+# Angle brackets are renderer-visible emphasis. Quest labels are also lookup
+# keys used by the AHK reward/vendor logic, so keep those keys in English and
+# translate them only in the final renderer.
 ANGLE_TOKEN_TRANSLATIONS = {
     "zh-CN": {
         "<2_respecs>": "<2点天赋重置点>",
@@ -161,6 +162,14 @@ ANGLE_TOKEN_TRANSLATIONS = {
     }
 }
 
+
+def source_quest_angle_keys() -> set[str]:
+    source = read_json(ENGLISH / "[leveltracker] gems.json")
+    return {str(key).replace(" ", "_").casefold() for key in source.get("_quests", {})}
+
+
+QUEST_ANGLE_KEYS = source_quest_angle_keys()
+
 _QUEST_LABELS: dict[str, dict[str, str]] | None = None
 
 
@@ -190,6 +199,8 @@ def mask_tokens(text: str, locale: str) -> tuple[str, dict[str, str]]:
         original = match.group(0)
         if original.casefold().startswith("(quest:"):
             tokens[key] = localized_quest_token(original, locale, text)
+        elif original[1:-1].casefold() in QUEST_ANGLE_KEYS:
+            tokens[key] = original
         else:
             tokens[key] = ANGLE_TOKEN_TRANSLATIONS.get(locale, {}).get(
                 original,
@@ -667,6 +678,35 @@ def build_gems(destination: Path) -> tuple[int, int]:
     return total, total
 
 
+def build_guide_labels(locale: str, destination: Path) -> tuple[int, int]:
+    labels = {}
+    for source, translated in ANGLE_TOKEN_TRANSLATIONS.get(locale, {}).items():
+        labels[source[1:-1].replace("_", " ")] = translated[1:-1]
+    write_json(destination, labels)
+    return len(labels), len(labels)
+
+
+def guide_angle_errors(text: str, locale: str) -> list[str]:
+    source_to_target = {
+        source[1:-1].casefold(): translated[1:-1]
+        for source, translated in ANGLE_TOKEN_TRANSLATIONS.get(locale, {}).items()
+    }
+    target_to_source = {target.casefold(): source for source, target in source_to_target.items()}
+    errors = []
+    for match in re.finditer(r"<([^<>\r\n]+)>", text):
+        token = match.group(1)
+        folded = token.casefold()
+        if folded in QUEST_ANGLE_KEYS:
+            if folded not in source_to_target:
+                errors.append(f"missing display label for quest token <{token}>")
+        elif folded in target_to_source:
+            if target_to_source[folded] in QUEST_ANGLE_KEYS:
+                errors.append(f"quest token <{token}> must keep its English key")
+        else:
+            errors.append(f"unknown or untranslated angle label <{token}>")
+    return errors
+
+
 def validate_gems(path: Path) -> list[str]:
     source_path = ENGLISH / "[leveltracker] gems.json"
     if not path.is_file():
@@ -757,6 +797,9 @@ def command_build(args: argparse.Namespace) -> None:
     gem_target = pack / "[leveltracker] gems.json"
     done, total = build_gems(gem_target)
     summary["[leveltracker] gems.json"] = {"translated": done, "total": total, "built": gem_target.exists()}
+    labels_target = pack / GUIDE_LABELS_NAME
+    done, total = build_guide_labels(args.locale, labels_target)
+    summary[GUIDE_LABELS_NAME] = {"translated": done, "total": total, "built": labels_target.exists()}
     area_target = pack / "[leveltracker] areas.json"
     done, total, unresolved = build_areas(args.locale, area_target)
     summary["[leveltracker] areas.json"] = {"translated": done, "total": total, "built": True, "unresolved": unresolved}
@@ -779,7 +822,6 @@ def command_validate(args: argparse.Namespace) -> None:
     errors, warnings = [], []
     guide_render_antipatterns = (
         (re.compile(r"__XUI_TOKEN"), "unrestored placeholder"),
-        (re.compile(r"<[a-z][^>]*>"), "untranslated visible angle label"),
         (re.compile(r"取得 \(img:waypoint\)"), "waypoint rendered as an obtainable item"),
         (re.compile(r"(?:放置|设置) \(img:portal\)"), "portal rendered with a literal placement verb"),
         (re.compile(r"向 \(img:[0-7]\) (?:前往|取得|前进寻找)"), "direction icon used as a grammatical object"),
@@ -800,13 +842,14 @@ def command_validate(args: argparse.Namespace) -> None:
                     for key, count in target.items():
                         if count > source[key]:
                             errors.append(f"{locale}/{path.name}: extra occurrence of key {key}")
-                if by_file[path.name] == 0 and path.name not in ("[leveltracker] areas.json", "[leveltracker] gems.json"):
+                if by_file[path.name] == 0 and path.name not in ("[leveltracker] areas.json", "[leveltracker] gems.json", GUIDE_LABELS_NAME):
                     warnings.append(f"{locale}/{path.name}: built file has no translated records")
                 if path.name == "[leveltracker] default guide.json":
-                    guide_text = path.read_text(encoding="utf-8-sig")
+                    guide_text = "\n".join(text for _, text in walk_strings(read_json(path)))
                     for pattern, message in guide_render_antipatterns:
                         if pattern.search(guide_text):
                             errors.append(f"{locale}/{path.name}: {message}")
+                    errors.extend(f"{locale}/{path.name}: {message}" for message in guide_angle_errors(guide_text, locale))
             except Exception as exc:
                 errors.append(f"{locale}/{path.name}: {exc}")
     result = {"errors": errors, "warnings": warnings, "ok": not errors}

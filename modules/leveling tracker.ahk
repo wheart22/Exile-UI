@@ -2113,6 +2113,8 @@ Leveltracker_PageDraw(name_main, name_back, preview, ByRef width, ByRef height, 
 					If InStr(text, "areaid") ;translate ID to location-name (and add potential act-clarification)
 						text := (!preview && ((act != vars.log.act) && !InStr(text, "labyrinth") || InStr(vars.log.areaID, "hideout")) ? vars.leveltracker.acts[act] " | " : "") . area
 					text := StrReplace(text, "_", " "), text := StrReplace(text, "(a11)", "(epilogue)")
+					If InStr(part, "<") && IsObject(db.leveltracker.guide_labels) && db.leveltracker.guide_labels.HasKey(text)
+						text := db.leveltracker.guide_labels[text]
 					If InStr(part, "(quest:")
 						replace := SubStr(text, InStr(text, "(quest:")), replace := SubStr(replace, 1, InStr(replace, ")")), item := StrReplace(SubStr(replace, InStr(replace, ":") + 1), ")"), text := StrReplace(text, replace, item)
 					If RegExMatch(text_parts[index - 1], "i)img\:(arena|in-out2)") && (part != ",")

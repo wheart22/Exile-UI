@@ -13,6 +13,7 @@
   "archive_layout": "exile-ui-root",
   "runtime_paths": [
     "Exile UI.ahk",
+    "Exile UI - Offline Preview.ahk",
     "cheat-sheets 2",
     "data",
     "img",

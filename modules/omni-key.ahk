@@ -14,6 +14,12 @@
 		Return
 	}
 
+	If Omnikey_Leveltracker()
+	{
+		Omni_Release()
+		Return
+	}
+
 	guide := vars.leveltracker.guide, Clipboard := ""
 	If (vars.general.wMouse = vars.hwnd.poe_client) && !WinActive("ahk_id " vars.hwnd.poe_client)
 	{
@@ -204,18 +210,8 @@ Omnikey2()
 		LLK_Overlay(vars.hwnd.runeshaping.main, "destroy"), vars.hwnd.runeshaping := ""
 		Gui, ocr_comms: Destroy
 	}
-	Else If (InStr(vars.log.areaID, "_town") || LLK_StringCompare(vars.log.areaID, ["hideout"]) || (vars.log.areaID = "1_3_17_1") || vars.client.stream) && vars.leveltracker.toggle && (guide.gemList.Count() || guide.itemList.Count())
-	{
-		start := A_TickCount
-		While GetKeyState(vars.omnikey.hotkey, "P") || !Blank(vars.omnikey.hotkey2) && GetKeyState(vars.omnikey.hotkey2, "P")
-		{
-			If (A_TickCount >= start + 200)
-			{
-				String_ContextMenu("exile-leveling"), active := 1
-				Break
-			}
-		}
-	}
+	Else If Omnikey_Leveltracker()
+		active := 1
 
 	If active
 	{
@@ -241,6 +237,35 @@ Omnikey2()
 		Gdip_DisposeImage(vars.searchstrings.pHaystack)
 	}
 	Omni_Release()
+}
+
+Omnikey_Leveltracker()
+{
+	local
+	global vars, settings
+
+	If vars.poe_version || !settings.features.leveltracker || !vars.leveltracker.toggle
+		Return 0
+	guide := vars.leveltracker.guide
+	If !IsObject(guide) || !(guide.gemList.Count() || guide.itemList.Count())
+		Return 0
+	If !(InStr(vars.log.areaID, "_town") || LLK_StringCompare(vars.log.areaID, ["hideout"]) || (vars.log.areaID = "1_3_17_1") || vars.client.stream)
+		Return 0
+
+	start := A_TickCount
+	While GetKeyState(vars.omnikey.hotkey, "P") || !Blank(vars.omnikey.hotkey2) && GetKeyState(vars.omnikey.hotkey2, "P")
+	{
+		If (A_TickCount >= start + 200)
+		{
+			Leveltracker_Strings()
+			If !IsObject(vars.leveltracker.string) || Blank(vars.leveltracker.string.1)
+				Return 0
+			String_ContextMenu("exile-leveling")
+			Return 1
+		}
+		Sleep, 1
+	}
+	Return 0
 }
 
 Omni_Release()

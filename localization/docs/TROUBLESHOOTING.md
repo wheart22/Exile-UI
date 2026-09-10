@@ -16,3 +16,8 @@
 区域名称来自 `data\zh-CN\[leveltracker] areas.json`。重新生成语言包后再安装，或删除
 旧的 `data\zh-CN` 后重新解压。若问题仍存在，请记录 Exile UI 上游提交号和当前语言包
 版本。
+
+## 没有 PoE1 时如何查看界面
+
+完整覆盖层需要游戏窗口；没有客户端时请双击根目录的 `Exile UI - Offline Preview.ahk`。
+该模式会读取当前 `zh-CN` 的界面、剧情和宝石数据，供本地检查翻译，不会启动游戏联动功能。

@@ -5,7 +5,7 @@
       "进入 areaid1_1_town ;; 狮眼守望"
     ],
     [
-      "(img:quest) 塔格拉: <大门口的敌人>",
+      "(img:quest) 塔格拉: <enemy_at_the_gate>",
       "进入 areaid1_1_2 ;; 暮光海滩"
     ],
     [
@@ -44,8 +44,8 @@
         "yes"
       ],
       "lines": [
-        "(img:quest) 塔格拉: <打破鸟蛋>、<打破鸟蛋>",
-        "(img:quest) 奈莎: <医者之心>",
+        "(img:quest) 塔格拉: <breaking_some_eggs1>、<breaking_some_eggs2>",
+        "(img:quest) 奈莎: <mercy_mission>",
         "(img:waypoint) 前往 areaid1_1_4_1 ;; 海潮地穴"
       ]
     },
@@ -55,7 +55,7 @@
         "no"
       ],
       "lines": [
-        "(color:ff00ff)在 (img:hideout) (color:fec076)你的藏身处 购买技能石 || 丽莉: <医者之心>、<打破鸟蛋>、<打破鸟蛋> ;; 仅导入 PoB 后显示",
+        "(color:ff00ff)在 (img:hideout) (color:fec076)你的藏身处 购买技能石 || 丽莉: <mercy_mission>、<breaking_some_eggs1>、<breaking_some_eggs2> ;; 仅导入 PoB 后显示",
         "找到并进入 areaid1_1_4_0 ;; 水声之渊",
         "(hint)__ 在 (color:cc99ff)桥 前走 (img:6) / (img:1)，少数为 (img:3)"
       ]
@@ -110,7 +110,7 @@
         "(color:ff00ff)安全路线? 进入 (img:portal) + (img:arena) 深处",
         "(hint)__ 击杀 黑渊危机（精华） || (color:cc99ff)重登",
         "(img:quest) 塔格拉: (quest:技能之书) ;; 黑渊危机",
-        "(img:quest) 奈莎: <冲出监牢>",
+        "(img:quest) 奈莎: <the_caged_brute1>",
         "(img:waypoint) 前往 areaid1_1_7_1 ;; 禁灵之狱下层"
       ]
     },
@@ -127,8 +127,8 @@
     ],
     [
       "小号: (img:quest) 塔格拉: (quest:技能之书) ;; 黑渊危机",
-      "(img:quest) 塔格拉: <冲出监牢>",
-      "小号: (img:quest) 奈莎: <冲出监牢>",
+      "(img:quest) 塔格拉: <the_caged_brute2>",
+      "小号: (img:quest) 奈莎: <the_caged_brute1>",
       "开荒: 可选: 有多余水银药剂? (color:cc99ff)商店配方:",
       "(hint)__ 水银药剂 + 增幅石 +（移速）鞋子",
       "(img:waypoint) 前往 areaid1_1_8 ;; 监狱大门"
@@ -145,7 +145,7 @@
     ],
     [
       "(img:quest) 毕斯特: (quest:技能之书)",
-      "(img:quest) 奈莎: <海妖之歌>",
+      "(img:quest) 奈莎: <the_siren's_cadence>",
       "(img:waypoint) 前往 areaid1_1_11_1 ;; 怨忿之窟"
     ],
     [
@@ -187,7 +187,7 @@
       "(color:cc99ff)重登: areaid1_2_town ;; 森林营地"
     ],
     [
-      "(img:quest) 古斯特: <黑色入侵者>",
+      "(img:quest) 古斯特: <intruders_in_black>",
       "(img:quest) 赫莲娜: <邀请至藏身处>",
       "沿 (img:5) 方向前往 areaid1_2_7 ;; 河道"
     ],
@@ -216,7 +216,7 @@
         ]
       ],
       "lines": [
-        "(img:quest) 斯克: <清理蜘蛛>",
+        "(img:quest) 斯克: <sharp_and_cruel>",
         "(img:waypoint) 前往 areaid1_2_3 ;; 危机叉路"
       ]
     },
@@ -258,7 +258,7 @@
         ]
       ],
       "lines": [
-        "(img:quest) 斯克: <清理蜘蛛>",
+        "(img:quest) 斯克: <sharp_and_cruel>",
         "(img:waypoint) 前往 areaid1_2_7 ;; 河道"
       ]
     },
@@ -527,7 +527,7 @@
       "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
     ],
     [
-      "(img:quest) 马拉莫: <迷失的爱情>",
+      "(img:quest) 马拉莫: <lost_in_love>",
       "(img:quest) 卡尔莉萨: (quest:下水道钥匙)",
       "进入 areaid1_3_2 ;; 贫民窟"
     ],
@@ -622,9 +622,9 @@
       "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地"
     ],
     [
-      "(img:quest) 马拉莫: <铲除左右手>",
+      "(img:quest) 马拉莫: <sever_the_right_hand>",
       "(img:quest) 葛里戈: (quest:技能之书)",
-      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 莉莉: <命运之语> ;; 仅导入 PoB 后显示",
+      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 莉莉: <a_fixture_of_fate> ;; 仅导入 PoB 后显示",
       "(img:waypoint) 前往 areaid1_3_13 ;; 乌旗守卫兵营"
     ],
     [
@@ -657,7 +657,7 @@
       ],
       "lines": [
         "沿 (img:7) 道路前往 areaid1_3_17_1 ;; 图书馆",
-        "quest-check: <命运之语> ;; 隐藏路径检查"
+        "quest-check: <a_fixture_of_fate> ;; 隐藏路径检查"
       ]
     },
     {
@@ -668,7 +668,7 @@
       "lines": [
         "找到 (img:waypoint) 和 (color:cc99ff)松动的蜡烛",
         "进入 areaid1_3_17_2 ;; 档案室",
-        "quest-check: <命运之语> ;; 隐藏路径检查"
+        "quest-check: <a_fixture_of_fate> ;; 隐藏路径检查"
       ]
     },
     {
@@ -680,7 +680,7 @@
         "找到 4 张 (img:quest) (quest:黄金书页)",
         "(hint)__ (img:craft): 蜡烛位于狭窄走廊内",
         "(color:cc99ff)重登: areaid1_3_town ;; 萨恩营地",
-        "quest-check: <命运之语> ;; 隐藏路径检查"
+        "quest-check: <a_fixture_of_fate> ;; 隐藏路径检查"
       ]
     },
     {
@@ -691,7 +691,7 @@
       "lines": [
         "准备一些通货",
         "(img:waypoint) 前往 areaid1_3_17_1 ;; 图书馆",
-        "quest-check: <命运之语> ;; 隐藏路径检查"
+        "quest-check: <a_fixture_of_fate> ;; 隐藏路径检查"
       ]
     },
     {
@@ -700,9 +700,9 @@
         "yes"
       ],
       "lines": [
-        "(img:quest) 萨欧赛: <命运之语>",
+        "(img:quest) 萨欧赛: <a_fixture_of_fate>",
         "(img:waypoint) 前往 areaid1_3_15 ;; 皇家花园",
-        "quest-check: <命运之语> ;; 隐藏路径检查"
+        "quest-check: <a_fixture_of_fate> ;; 隐藏路径检查"
       ]
     },
     [
@@ -749,7 +749,7 @@
     ],
     [
       "(img:quest) 达苏尼: (quest:技能之书)",
-      "(img:quest) 欧优恩: <突破封印>",
+      "(img:quest) 欧优恩: <breaking_the_seal>",
       "常规选项: (img:lab) 普通迷宫",
       "(img:waypoint) 前往 areaid1_4_3_3 ;; 水晶矿脉"
     ],
@@ -797,7 +797,7 @@
       "使用 (img:portal) 返回 areaid1_4_town ;; 统治者之殿"
     ],
     [
-      "(img:quest) 达拉夫人: <永恒梦魇>",
+      "(img:quest) 达拉夫人: <the_eternal_nightmare>",
       "进入 areaid1_4_7 ;; 奥瑞亚之道"
     ],
     [
@@ -876,7 +876,7 @@
   [
     [
       "开荒: 与 (img:quest) 丽莉交谈",
-      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 丽莉: <优雅不再> ;; 仅导入 PoB 后显示",
+      "小号: 在 (img:hideout) (color:fec076)藏身处 (color:ff00ff)购买宝石 || 丽莉: <fallen_from_grace> ;; 仅导入 PoB 后显示",
       "进入 areaid2_6_2 ;; 暮光海滩"
     ],
     [
@@ -933,7 +933,7 @@
         "yes"
       ],
       "lines": [
-        "(img:quest) 丽莉: <优雅不再>",
+        "(img:quest) 丽莉: <fallen_from_grace>",
         "可选: (img:quest) 毕斯特: <腰带/项链>，交付 (quest:手稿)",
         "(img:quest) 塔格拉: (quest:技能之书) ;; 图克哈玛",
         "(img:waypoint) 前往 areaid2_6_6 ;; 寂默山岭"
