@@ -1,7 +1,7 @@
 ## Exile UI PoE1 简体中文分支
 
 本分支 `poe1-zh-CN` 基于 [Lailloken/Exile-UI](https://github.com/Lailloken/Exile-UI) 的最新 `main`，保留上游 PoE1/PoE2 程序与英文数据。
-语言包只提供 PoE1 简体中文资源，PoE2 指南和 PoE2 宝石数据保持英文。
+中文资源已经合并进完整运行目录，Release 提供解压即用的整合压缩包；PoE2 指南和 PoE2 宝石数据保持英文。
 
 主要包含：
 
@@ -10,11 +10,18 @@
 - 宝石数据库保留英文内部键，因此英文游戏客户端搜索逻辑不变；
 - 不修改上游 AHK 程序，也不添加定时 GitHub Actions。
 
-### 安装语言包
+### 下载与安装整合版
 
-运行 `localization/tools/localize.py build --locale zh-CN --allow-partial` 生成语言包，或使用
-`localization/tools/package_release.py` 生成可分发压缩包。将压缩包内的 `data/zh-CN/` 合并到
-Exile UI 根目录的 `data/` 下，再在设置中选择 `zh-CN`。
+从 [Releases](https://github.com/wheart22/Exile-UI/releases) 下载最新的
+`Exile-UI-zh-CN-*.zip`，完整解压到任意目录。压缩包已经包含 Exile UI 程序、全部运行数据和
+简体中文 PoE1 资源，不需要再与原版目录合并。
+
+1. 如果没有 AutoHotkey v1.1，请先从 [AutoHotkey](https://www.autohotkey.com/) 安装。
+2. 双击解压目录中的 `Exile UI.ahk` 启动程序。
+3. 首次启动后，在设置的“常规/UI”区域将界面语言选择为 `zh-CN`。
+
+PoB 导入后的主动宝石、辅助宝石和宝石链接会显示为“简体中文名（English name）”；英文游戏客户端
+搜索逻辑保持不变。当前版本不包含中文 `client.txt`、物品文本和 OCR 适配。
 
 ### 手动同步上游
 
@@ -41,7 +48,7 @@ A light-weight AHK overlay with UI and QoL features for Path of Exile 1 and 2, e
 <br>
 
 ## Download & Setup
-| [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_autohotkey.png)](https://www.autohotkey.com/) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_guide.png)](https://github.com/Lailloken/Exile-UI/wiki) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_download.png)](https://github.com/Lailloken/Exile-UI/archive/refs/heads/main.zip) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_releases.png)](https://github.com/Lailloken/Exile-UI/releases) |
+| [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_autohotkey.png)](https://www.autohotkey.com/) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_guide.png)](https://github.com/Lailloken/Exile-UI/wiki) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_download.png)](https://github.com/wheart22/Exile-UI/releases) | [![img](https://raw.githubusercontent.com/Lailloken/Exile-UI/main/img/readme/_releases.png)](https://github.com/wheart22/Exile-UI/releases) |
 |---|---|---|---|
 
 ## Contributions

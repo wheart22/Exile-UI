@@ -2,7 +2,8 @@
 
 ## 发布内容
 
-语言包只发布 `zh-CN`，并且只包含 PoE1 资源：
+发布的是完整的 Exile UI 独立整合包，不是需要覆盖到原版目录的语言包。压缩包包含上游完整运行
+程序和数据，并将以下 PoE1 简体中文资源放在 `data/zh-CN/`：
 
 - `UI.txt`；
 - `help tooltips.json`；
@@ -11,7 +12,7 @@
 - `[leveltracker] gems.json`。
 
 不发布 PoE2 指南、PoE2 宝石数据库、繁体中文资源，也不把未完成的 `client.txt` 中文翻译放入
-语言包。上游 AHK 源码不被构建或安装流程修改。
+整合包。上游 AHK 源码不被构建或安装流程修改。
 
 ## 构建和检查
 
@@ -33,7 +34,8 @@ python localization/tools/package_release.py
 - `manifest.json`；
 - `SHA256SUMS.txt`。
 
-压缩包内语言文件使用 `data/zh-CN/` 根目录布局，并附带 `安装说明.txt`。
+压缩包内使用 `Exile-UI-zh-CN-<版本>/` 根目录布局，包含 `Exile UI.ahk`、`data/`、`modules/`、
+`img/` 和 `安装说明.txt`，解压后即可启动，不需要再合并其他 Exile UI 文件。
 
 ## 手动同步上游
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a deterministic PoE1 Simplified Chinese language archive."""
+"""Create a deterministic, standalone PoE1 Simplified Chinese release archive."""
 
 from __future__ import annotations
 
@@ -50,39 +50,50 @@ def add_bytes(
     archive.writestr(info, data)
 
 
-def release_source(config: dict[str, Any], locale: str, name: str) -> Path:
-    return PACKS / locale / name
+def tracked_runtime_files(config: dict[str, Any]) -> list[str]:
+    """Return tracked runtime files and exclude localization tooling from releases."""
+    roots = [str(item).replace("\\", "/").rstrip("/") for item in config.get("runtime_paths", [])]
+    if not roots:
+        raise SystemExit("release has no runtime_paths")
+    result = subprocess.run(
+        ["git", "ls-files", "-z"],
+        cwd=ROOT,
+        check=True,
+        stdout=subprocess.PIPE,
+    )
+    files = [name for name in result.stdout.decode("utf-8").split("\0") if name]
+    selected = [
+        name
+        for name in files
+        if any(name == root or name.startswith(root + "/") for root in roots)
+    ]
+    if not selected:
+        raise SystemExit("release runtime_paths contain no tracked files")
+    return sorted(selected)
 
 
-def create_archive(
+def create_application_archive(
     path: Path,
-    locales: list[str],
-    files: list[str],
     config: dict[str, Any],
     zip_time: tuple[int, int, int, int, int, int],
 ) -> dict[str, str]:
     members: dict[str, str] = {}
+    root = f"Exile-UI-zh-CN-{config['version']}"
     with zipfile.ZipFile(path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for locale in locales:
-            for name in files:
-                source = release_source(config, locale, name)
-                if not source.is_file():
-                    raise SystemExit(f"missing release file: {source}")
-                data = source.read_bytes()
-                member = (
-                    f"data/{locale}/{name}"
-                    if config.get("archive_layout") == "exile-ui-root"
-                    else f"{locale}/{name}"
-                )
-                add_bytes(archive, member, data, zip_time)
-                members[member] = sha256_bytes(data)
+        for relative in tracked_runtime_files(config):
+            source = ROOT / Path(relative)
+            data = source.read_bytes()
+            member = f"{root}/{relative}"
+            add_bytes(archive, member, data, zip_time)
+            members[member] = sha256_bytes(data)
 
-        instructions = config.get("language_package", {})
+        instructions = config.get("release_instructions", {})
         source = ROOT / instructions.get("instructions_source", "")
         member = instructions.get("instructions_archive_name", "")
         if not source.is_file() or not member:
-            raise SystemExit("missing language-package instructions")
+            raise SystemExit("missing standalone-release instructions")
         data = release_asset_bytes(source)
+        member = f"{root}/{member}"
         add_bytes(archive, member, data, zip_time)
         members[member] = sha256_bytes(data)
     return members
@@ -117,11 +128,12 @@ def verify_release_scope(config: dict[str, Any]) -> None:
                 raise SystemExit(f"excluded file accidentally included: {excluded}")
 
     if config.get("archive_layout") != "exile-ui-root":
-        raise SystemExit("language packages must use the Exile UI root layout")
-    language_package = config.get("language_package", {})
-    instructions = ROOT / language_package.get("instructions_source", "")
+        raise SystemExit("standalone releases must use the Exile UI root layout")
+    tracked_runtime_files(config)
+    release_instructions = config.get("release_instructions", {})
+    instructions = ROOT / release_instructions.get("instructions_source", "")
     if not instructions.is_file():
-        raise SystemExit(f"missing language-package instructions: {instructions}")
+        raise SystemExit(f"missing standalone-release instructions: {instructions}")
 
 def main() -> None:
     config = read_json(CONFIG)
@@ -137,16 +149,15 @@ def main() -> None:
     zip_time = (year, month, day, 0, 0, 0)
     output = WORK / "releases" / version
     output.mkdir(parents=True, exist_ok=True)
-    files = config["included_files"]
     locales = config["locales"]
 
     archives: dict[str, dict[str, Any]] = {}
     if len(locales) != 1:
-        raise SystemExit("the PoE1 language package must contain exactly one locale")
+        raise SystemExit("the standalone release must contain exactly one locale")
     locale = locales[0]
     name = f"Exile-UI-{locale}-{version}.zip"
     path = output / name
-    members = create_archive(path, [locale], files, config, zip_time)
+    members = create_application_archive(path, config, zip_time)
     archives[name] = {
         "sha256": sha256_bytes(path.read_bytes()),
         "size": path.stat().st_size,
